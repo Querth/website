@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Live site: **https://patiphanh.vercel.app** — pushes to `main` auto-deploy there.
+
+## Setting up on a new machine
+
+1. Install Git (and Claude Code, if desired).
+2. Add an SSH key to GitHub from that machine: Settings → SSH and GPG keys → New SSH key.
+3. Clone the repo:
+   ```bash
+   git clone git@github.com:Querth/website.git
+   ```
+4. No extra deploy setup needed — pushes to `main` go live automatically via the GitHub–Vercel connection.
+
 ## Getting Started
 
 First, run the development server:
