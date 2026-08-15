@@ -1,18 +1,8 @@
 const projects = [
   {
-    name: "Project One",
-    description: "A short description of what this project does and why it's interesting.",
-    link: "#",
-  },
-  {
-    name: "Project Two",
-    description: "A short description of what this project does and why it's interesting.",
-    link: "#",
-  },
-  {
-    name: "Project Three",
-    description: "A short description of what this project does and why it's interesting.",
-    link: "#",
+    name: "website",
+    description: "My personal site and learning project.",
+    link: "https://github.com/Querth/website",
   },
 ];
 
@@ -23,11 +13,10 @@ export default function Home() {
         {/* Hero */}
         <section className="mb-20">
           <h1 className="text-4xl font-semibold tracking-tight text-black dark:text-zinc-50">
-            Your Name
+            Patiphanh
           </h1>
           <p className="mt-4 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            A one-line description of who you are and what you do — e.g.
-            &ldquo;Software engineer building things on the web.&rdquo;
+            Student learning new skills.
           </p>
         </section>
 
@@ -37,8 +26,8 @@ export default function Home() {
             About
           </h2>
           <p className="mt-4 leading-7 text-zinc-700 dark:text-zinc-300">
-            Write a couple of sentences here about your background, what you&apos;re
-            working on, and what you&apos;re interested in.
+            Patiphanh is a student exploring web development and picking up
+            new skills through hands-on projects.
           </p>
         </section>
 
@@ -73,14 +62,14 @@ export default function Home() {
           <p className="mt-4 leading-7 text-zinc-700 dark:text-zinc-300">
             Reach me at{" "}
             <a
-              href="mailto:you@example.com"
+              href="mailto:ikkyuzchocolate@gmail.com"
               className="font-medium text-black underline dark:text-zinc-50"
             >
-              you@example.com
+              ikkyuzchocolate@gmail.com
             </a>{" "}
             or find me on{" "}
             <a
-              href="#"
+              href="https://github.com/Querth"
               className="font-medium text-black underline dark:text-zinc-50"
             >
               GitHub
