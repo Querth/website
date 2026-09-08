@@ -22,7 +22,13 @@
 
   <!-- Nav -->
   <header class="nav" id="nav">
-    <a href="#top" class="nav-brand">EBISU SHOTEN</a>
+    <a href="#top" class="nav-brand">
+      <span class="hanko" aria-hidden="true">
+        <span class="hanko-kanji">恵</span>
+        <span class="hanko-label">EBISU</span>
+      </span>
+      <span class="nav-brand-text">EBISU SHOTEN</span>
+    </a>
     <nav class="nav-links" id="navLinks">
       <a href="#story" data-nav>Story</a>
       <a href="#menu" data-nav>Menu</a>
@@ -169,9 +175,9 @@
       <button class="menu-tab" data-tab="katsu" role="tab" aria-selected="false">Kushikatsu</button>
       <button class="menu-tab" data-tab="yakimono" role="tab" aria-selected="false">Yakimono</button>
       <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Rice, Noodle &amp; Curry</button>
-      <button class="menu-tab" data-tab="drinks" role="tab" aria-selected="false">Drinks &amp; Dessert</button>
     </div>
 
+    <div class="menu-body">
     <div class="menu-panels reveal">
       <ul class="menu-panel is-active" id="panel-tapas" role="tabpanel">
         <li class="menu-item"><div><span class="mi-name">Osaka Takoyaki (5 pcs)</span><span class="mi-note">大阪名物たこ焼き</span></div><span class="mi-price">1 980 Ft</span></li>
@@ -208,13 +214,17 @@
         <li class="menu-item"><div><span class="mi-name">Rich Miso Ramen</span><span class="mi-note">特製 味噌ラーメン</span></div><span class="mi-price">4 180 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Deluxe Grilled Eel Bowl (Unadon)</span><span class="mi-note">特上 うな重</span></div><span class="mi-price">5 980 Ft</span></li>
       </ul>
-      <ul class="menu-panel" id="panel-drinks" role="tabpanel">
+    </div>
+
+    <aside class="menu-bar reveal">
+      <p class="menu-bar-title">From the Bar</p>
+      <ul>
         <li class="menu-item"><div><span class="mi-name">Asahi Super Dry Draft (0.5L)</span><span class="mi-note">生ビール</span></div><span class="mi-price">1 480 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Fresh Lemon Shochu Sour</span><span class="mi-note">生搾りレモンサワー</span></div><span class="mi-price">2 380 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Suntory Kaku Highball</span><span class="mi-note">角ハイボール</span></div><span class="mi-price">2 980 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Dassai 45 Junmai Daiginjo Sake</span><span class="mi-note">獺祭 45 純米大吟醸</span></div><span class="mi-price">4 280 Ft</span></li>
-        <li class="menu-item"><div><span class="mi-name">Matcha Tiramisu, Wooden Masu Box</span><span class="mi-note">宇治抹茶 升ティラミス</span></div><span class="mi-price">1 980 Ft</span></li>
       </ul>
+    </aside>
     </div>
     <p class="menu-note reveal">A short list of highlights from the full menu — around 4,000–6,000 Ft per person with drinks.</p>
   </section>
@@ -361,7 +371,13 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-col">
-        <p class="footer-heading">Ebisu Shoten</p>
+        <p class="footer-heading footer-brand">
+          <span class="hanko hanko-sm" aria-hidden="true">
+            <span class="hanko-kanji">恵</span>
+            <span class="hanko-label">EBISU</span>
+          </span>
+          Ebisu Shoten
+        </p>
         <a href="#top">Home</a>
         <a href="#story">Story</a>
         <a href="#menu">Menu</a>
