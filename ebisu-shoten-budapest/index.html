@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebisu Shoten — Izakaya &amp; Sake Bar, Budapest</title>
+  <meta name="description" content="Ebisu Shoten is a Japanese izakaya and sake bar in Budapest — yakitori, small plates, and a deep sake &amp; whisky list in a lantern-lit back-street room." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="lantern-glow" id="lanternGlow" aria-hidden="true"></div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <span class="loader-kanji">恵比寿</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand">
+      <span class="nav-kanji">恵比寿商店</span>
+      <span class="nav-name">Ebisu Shoten</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>Story</a>
+      <a href="#menu" data-nav>Menu</a>
+      <a href="#gallery" data-nav>Gallery</a>
+      <a href="#visit" data-nav>Visit</a>
+      <a href="#visit" class="nav-cta" data-nav>Reserve</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-noren" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Budapest · Belváros</p>
+      <h1 class="hero-title">
+        <span class="line reveal">
+          <span class="kanji-drift">恵比寿</span>
+        </span>
+        <span class="line reveal">Ebisu Shoten</span>
+      </h1>
+      <p class="hero-sub reveal">
+        An izakaya &amp; sake bar for the god of good fortune —
+        charcoal yakitori, small plates, and a glass poured slow.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#menu" class="btn btn-primary">
+          <span>View the menu</span>
+        </a>
+        <a href="#visit" class="btn btn-ghost">
+          <span>Reserve a table</span>
+        </a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll down">
+      <span class="scroll-cue-line"></span>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="eyebrow reveal">The Story</p>
+      <h2 class="reveal">Named for the god who never looks back</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Ebisu is the only one of Japan's seven lucky gods said to be
+          purely native — a fisherman's god, always smiling, always a
+          little late because he can't hear the other gods calling.
+          He is patient. He waits for the good thing to come to him.
+        </p>
+        <p>
+          <strong>Ebisu Shoten</strong> — "Ebisu's shop" — opened on a
+          quiet street off Budapest's inner ring with the same idea:
+          slow down, sit at the counter, let the coals do the work.
+          Skewers grilled over binchōtan charcoal, small plates built
+          around what came in that morning, and a back bar stocked
+          deep with sake, shōchū and Japanese whisky.
+        </p>
+        <p class="about-signoff">— the Ebisu Shoten kitchen</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="120">0</span>
+          <span class="stat-label">sake &amp; whisky labels</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="24">0</span>
+          <span class="stat-label">seats at the counter</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="7">0</span>
+          <span class="stat-label">nights a week, open late</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <p class="eyebrow reveal">Kitchen &amp; Bar</p>
+      <h2 class="reveal">A short menu, done properly</h2>
+    </div>
+
+    <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab is-active" data-tab="yakitori" role="tab" aria-selected="true">Yakitori</button>
+      <button class="menu-tab" data-tab="plates" role="tab" aria-selected="false">Small Plates</button>
+      <button class="menu-tab" data-tab="rice" role="tab" aria-selected="false">Rice &amp; Noodle</button>
+      <button class="menu-tab" data-tab="bar" role="tab" aria-selected="false">Sake &amp; Bar</button>
+    </div>
+
+    <div class="menu-panels reveal">
+      <ul class="menu-panel is-active" id="panel-yakitori" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Momo — chicken thigh</span><span class="mi-note">charcoal, tare or salt</span></div><span class="mi-price">1 900 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Tsukune — chicken meatball</span><span class="mi-note">egg yolk, sansho</span></div><span class="mi-price">2 100 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Buta bara — pork belly</span><span class="mi-note">wrapped negi</span></div><span class="mi-price">2 200 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Shiitake</span><span class="mi-note">butter, shoyu</span></div><span class="mi-price">1 600 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Uzura — quail egg</span><span class="mi-note">smoked salt</span></div><span class="mi-price">1 400 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-plates" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Hokkaido hotate carpaccio</span><span class="mi-note">yuzu kosho, shiso oil</span></div><span class="mi-price">4 800 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Agedashi tofu</span><span class="mi-note">bonito dashi, grated daikon</span></div><span class="mi-price">2 400 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Karaage</span><span class="mi-note">Hungarian corn-fed chicken, kewpie</span></div><span class="mi-price">3 200 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Nasu dengaku</span><span class="mi-note">grilled aubergine, miso glaze</span></div><span class="mi-price">2 600 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-rice" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Onigiri — smoked mackerel</span><span class="mi-note">charcoal-grilled nori</span></div><span class="mi-price">1 800 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Kamameshi — seasonal</span><span class="mi-note">clay-pot rice, ask your server</span></div><span class="mi-price">4 200 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Yaki udon</span><span class="mi-note">pork belly, cabbage, bonito</span></div><span class="mi-price">3 600 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-bar" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Ebisu house sake</span><span class="mi-note">junmai ginjo, served chilled</span></div><span class="mi-price">2 200 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Yuzu highball</span><span class="mi-note">Japanese whisky, soda</span></div><span class="mi-price">2 800 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Umeshu sour</span><span class="mi-note">plum wine, lemon, shiso</span></div><span class="mi-price">2 600 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Sake flight</span><span class="mi-note">three pours, sommelier's choice</span></div><span class="mi-price">5 400 Ft</span></li>
+      </ul>
+    </div>
+    <p class="menu-note reveal">Menu changes with the season — prices shown are placeholders for illustration.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow reveal">Inside</p>
+      <h2 class="reveal">The room</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <button class="gallery-tile g-1" data-caption="The counter — 24 seats around the charcoal grill." aria-label="Open image: the counter"><span>The Counter</span></button>
+      <button class="gallery-tile g-2" data-caption="Back bar — sake, shōchū and Japanese whisky." aria-label="Open image: the back bar"><span>Back Bar</span></button>
+      <button class="gallery-tile g-3" data-caption="Robata grill — binchōtan charcoal, low and slow." aria-label="Open image: the grill"><span>Robata Grill</span></button>
+      <button class="gallery-tile g-4" data-caption="Private tatami room for up to eight guests." aria-label="Open image: tatami room"><span>Tatami Room</span></button>
+      <button class="gallery-tile g-5" data-caption="Entrance — the noren curtain on Kazinczy-adjacent street." aria-label="Open image: entrance"><span>Entrance</span></button>
+    </div>
+  </section>
+
+  <!-- Visit / Contact -->
+  <section class="visit" id="visit">
+    <div class="section-head">
+      <p class="eyebrow reveal">Visit</p>
+      <h2 class="reveal">Come find the lantern</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-info reveal">
+        <dl>
+          <div class="visit-row">
+            <dt>Address</dt>
+            <dd>Wesselényi utca 12<br />1077 Budapest, Hungary</dd>
+          </div>
+          <div class="visit-row">
+            <dt>Hours</dt>
+            <dd>
+              Tue–Thu 17:00–00:00<br />
+              Fri–Sat 17:00–02:00<br />
+              Sun–Mon 17:00–23:00
+            </dd>
+          </div>
+          <div class="visit-row">
+            <dt>Contact</dt>
+            <dd>
+              <a href="tel:+3612345678">+36 1 234 5678</a><br />
+              <a href="mailto:asztal@ebisushoten.hu">asztal@ebisushoten.hu</a>
+            </dd>
+          </div>
+          <div class="visit-row">
+            <dt>Follow</dt>
+            <dd class="visit-social">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="reserve-form reveal" id="reserveForm" novalidate>
+        <p class="reserve-title">Reserve a table</p>
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span>Guests</span>
+            <select name="guests" required>
+              <option value="">—</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Date</span>
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            <span>Time</span>
+            <input type="time" name="time" required />
+          </label>
+        </div>
+        <label class="full">
+          <span>Email</span>
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label class="full">
+          <span>Notes <em>(optional)</em></span>
+          <textarea name="notes" rows="2" placeholder="Allergies, occasion, seating preference…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span class="btn-label">Request table</span>
+          <span class="btn-check" aria-hidden="true">✓</span>
+        </button>
+        <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="nav-kanji">恵比寿商店</span>
+    <p>Ebisu Shoten · Budapest — a fictional izakaya, built as a design study.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
