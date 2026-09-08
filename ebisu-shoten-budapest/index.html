@@ -4,110 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ebisu Shoten — Izakaya &amp; Sake Bar, Budapest</title>
-  <meta name="description" content="Ebisu Shoten is a Japanese izakaya and sake bar in Budapest — yakitori, small plates, and a deep sake &amp; whisky list in a lantern-lit back-street room." />
+  <meta name="description" content="Ebisu Shoten is a Japanese izakaya and sake bar in Budapest — yakitori, small plates, and a deep sake list, in a room built around the counter." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="lantern-glow" id="lanternGlow" aria-hidden="true"></div>
-
   <div class="grain" aria-hidden="true"></div>
 
-  <!-- Loader -->
-  <div class="loader" id="loader" aria-hidden="true">
-    <span class="loader-kanji">恵比寿</span>
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <span>BUDAPEST · BELVÁROS</span>
+    <span>RESERVATIONS · +36 1 234 5678</span>
   </div>
 
   <!-- Nav -->
   <header class="nav" id="nav">
-    <a href="#top" class="nav-brand">
-      <span class="nav-kanji">恵比寿商店</span>
-      <span class="nav-name">Ebisu Shoten</span>
-    </a>
+    <a href="#top" class="nav-brand">EBISU SHOTEN</a>
     <nav class="nav-links" id="navLinks">
-      <a href="#about" data-nav>Story</a>
+      <a href="#story" data-nav>Story</a>
       <a href="#menu" data-nav>Menu</a>
       <a href="#gallery" data-nav>Gallery</a>
       <a href="#visit" data-nav>Visit</a>
       <a href="#visit" class="nav-cta" data-nav>Reserve</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="top">
-    <div class="hero-noren" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
-    <div class="hero-inner">
-      <p class="eyebrow reveal">Budapest · Belváros</p>
-      <h1 class="hero-title">
-        <span class="line reveal">
-          <span class="kanji-drift">恵比寿</span>
-        </span>
-        <span class="line reveal">Ebisu Shoten</span>
-      </h1>
-      <p class="hero-sub reveal">
-        An izakaya &amp; sake bar for the god of good fortune —
-        charcoal yakitori, small plates, and a glass poured slow.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#menu" class="btn btn-primary">
-          <span>View the menu</span>
-        </a>
-        <a href="#visit" class="btn btn-ghost">
-          <span>Reserve a table</span>
-        </a>
+  <!-- Full-screen nav overlay -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <span class="overlay-ghost">恵比寿</span>
+    <div class="overlay-grid">
+      <div class="overlay-col">
+        <a data-nav-overlay href="#top">Home</a>
+        <a data-nav-overlay href="#story">Story</a>
+        <a data-nav-overlay href="#menu">Menu</a>
+        <a data-nav-overlay href="#gallery">Gallery</a>
+        <a data-nav-overlay href="#visit">Visit</a>
+      </div>
+      <div class="overlay-col">
+        <a href="tel:+3612345678">+36 1 234 5678</a>
+        <a href="mailto:asztal@ebisushoten.hu">asztal@ebisushoten.hu</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div class="overlay-col overlay-join">
+        <p class="overlay-join-title">First seating, first pour.</p>
+        <p class="overlay-join-copy">Join the list for seasonal menus and counter openings before they're announced.</p>
+        <form class="overlay-join-form" id="joinForm">
+          <input type="email" placeholder="Email address" required aria-label="Email address" />
+          <button type="submit">Join</button>
+        </form>
       </div>
     </div>
-    <a class="scroll-cue" href="#about" aria-label="Scroll down">
-      <span class="scroll-cue-line"></span>
-      <span>Scroll</span>
-    </a>
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">Close</button>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Izakaya &amp; Sake Bar</p>
+      <h1 class="hero-word reveal">EBISU<br />SHOTEN</h1>
+    </div>
   </section>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="section-head">
-      <p class="eyebrow reveal">The Story</p>
-      <h2 class="reveal">Named for the god who never looks back</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text reveal">
+  <!-- Story intro -->
+  <section class="intro" id="story">
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p class="eyebrow">Ebisu Shoten</p>
+        <h2>Gather at<br />the counter.</h2>
         <p>
           Ebisu is the only one of Japan's seven lucky gods said to be
           purely native — a fisherman's god, always smiling, always a
-          little late because he can't hear the other gods calling.
-          He is patient. He waits for the good thing to come to him.
+          little late, because he can't hear the other gods calling
+          from the ceiling of heaven. He waits. Good things come to
+          the patient.
         </p>
         <p>
-          <strong>Ebisu Shoten</strong> — "Ebisu's shop" — opened on a
-          quiet street off Budapest's inner ring with the same idea:
-          slow down, sit at the counter, let the coals do the work.
-          Skewers grilled over binchōtan charcoal, small plates built
-          around what came in that morning, and a back bar stocked
-          deep with sake, shōchū and Japanese whisky.
+          Ebisu Shoten — "Ebisu's shop" — opened on a quiet street off
+          Budapest's inner ring with the same idea. Sit at the counter.
+          Let the coals do the work. Skewers over binchōtan charcoal,
+          small plates built around what came in that morning, and a
+          back bar stocked deep with sake, shōchū and Japanese whisky.
         </p>
-        <p class="about-signoff">— the Ebisu Shoten kitchen</p>
+        <a href="#visit" class="btn btn-dark">Make your reservation</a>
       </div>
-      <div class="about-stats reveal">
-        <div class="stat">
-          <span class="stat-num" data-count="120">0</span>
-          <span class="stat-label">sake &amp; whisky labels</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" data-count="24">0</span>
-          <span class="stat-label">seats at the counter</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" data-count="7">0</span>
-          <span class="stat-label">nights a week, open late</span>
-        </div>
+      <div class="intro-media reveal">
+        <div class="photo photo-1"><span class="photo-tag">The dining room</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split duo -->
+  <section class="duo">
+    <button class="duo-half photo-2 reveal" data-caption="The counter — 24 seats around the charcoal grill.">
+      <span class="photo-tag">The Counter</span>
+    </button>
+    <button class="duo-half photo-3 reveal" data-caption="Back bar — sake, shōchū and Japanese whisky.">
+      <span class="photo-tag">Back Bar</span>
+    </button>
+  </section>
+
+  <!-- Full-bleed CTA break -->
+  <section class="break">
+    <div class="break-media" aria-hidden="true"></div>
+    <div class="break-inner reveal">
+      <p class="eyebrow">Ebisu Shoten Rewards</p>
+      <h2>An occasion,<br />poured slow.</h2>
+      <p class="break-copy">
+        No two nights at the counter are the same — the fish changes with
+        the tide, the sake list turns with the season. Come back often
+        and it still surprises you.
+      </p>
+      <div class="break-actions">
+        <a href="#visit" class="btn btn-light">Reserve a table</a>
+        <a href="#menu" class="btn btn-outline-light">View menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kitchen philosophy (reversed editorial) -->
+  <section class="intro intro-reverse">
+    <div class="intro-grid">
+      <div class="intro-media reveal">
+        <div class="photo photo-4"><span class="photo-tag">Robata grill</span></div>
+      </div>
+      <div class="intro-text reveal">
+        <p class="eyebrow">Kitchen &amp; Bar</p>
+        <h2>Distilled to<br />a short list.</h2>
+        <p>
+          Budapest is a city of contrasts too — grand boulevards and
+          back-street bars, ruin pubs and quiet counters. Ebisu Shoten
+          sits in that second Budapest: unmarked door, low light, no
+          rush.
+        </p>
+        <p>
+          It's in the chicken turned by hand over binchōtan. It's in
+          the thirty-odd bottles of sake kept at the right temperature,
+          each one poured by someone who can tell you why. It's in
+          keeping the menu short enough that everything on it is done
+          properly.
+        </p>
+        <a href="#menu" class="btn btn-dark">See what's on tonight</a>
       </div>
     </div>
   </section>
@@ -116,7 +160,7 @@
   <section class="menu" id="menu">
     <div class="section-head">
       <p class="eyebrow reveal">Kitchen &amp; Bar</p>
-      <h2 class="reveal">A short menu, done properly</h2>
+      <h2 class="reveal">A short menu, done properly.</h2>
     </div>
 
     <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
@@ -155,6 +199,39 @@
     <p class="menu-note reveal">Menu changes with the season — prices shown are placeholders for illustration.</p>
   </section>
 
+  <!-- Carousel: recurring nights -->
+  <section class="calendar">
+    <div class="calendar-head reveal">
+      <h2>A finely-poured calendar.</h2>
+      <div class="calendar-nav">
+        <button id="carPrev" aria-label="Previous">←</button>
+        <button id="carNext" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="calendar-track" id="calendarTrack">
+      <article class="cal-card">
+        <div class="cal-media cal-media-1"><span class="cal-badge">Weekly</span></div>
+        <h3>Sake Society — Tuesdays</h3>
+        <p>A guided flight of three pours from that week's new arrivals, poured at the counter.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-2"><span class="cal-badge">Monthly</span></div>
+        <h3>Off-Menu Omakase</h3>
+        <p>Eight courses, chef's choice, first Thursday of the month. Counter seats only, booked in advance.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-3"><span class="cal-badge">Late Night</span></div>
+        <h3>The Late Grill — Fri &amp; Sat</h3>
+        <p>Robata service continues past midnight, with a short late-night list built for one more round.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-4"><span class="cal-badge">Seasonal</span></div>
+        <h3>Hanami Set</h3>
+        <p>A spring set built around whatever the season hands the kitchen — announced a week at a time.</p>
+      </article>
+    </div>
+  </section>
+
   <!-- Gallery -->
   <section class="gallery" id="gallery">
     <div class="section-head">
@@ -162,11 +239,11 @@
       <h2 class="reveal">The room</h2>
     </div>
     <div class="gallery-grid reveal">
-      <button class="gallery-tile g-1" data-caption="The counter — 24 seats around the charcoal grill." aria-label="Open image: the counter"><span>The Counter</span></button>
-      <button class="gallery-tile g-2" data-caption="Back bar — sake, shōchū and Japanese whisky." aria-label="Open image: the back bar"><span>Back Bar</span></button>
-      <button class="gallery-tile g-3" data-caption="Robata grill — binchōtan charcoal, low and slow." aria-label="Open image: the grill"><span>Robata Grill</span></button>
-      <button class="gallery-tile g-4" data-caption="Private tatami room for up to eight guests." aria-label="Open image: tatami room"><span>Tatami Room</span></button>
-      <button class="gallery-tile g-5" data-caption="Entrance — the noren curtain on Kazinczy-adjacent street." aria-label="Open image: entrance"><span>Entrance</span></button>
+      <button class="gallery-tile photo-2" data-caption="The counter — 24 seats around the charcoal grill."><span>The Counter</span></button>
+      <button class="gallery-tile photo-3" data-caption="Back bar — sake, shōchū and Japanese whisky."><span>Back Bar</span></button>
+      <button class="gallery-tile photo-4" data-caption="Robata grill — binchōtan charcoal, low and slow."><span>Robata Grill</span></button>
+      <button class="gallery-tile photo-5" data-caption="Private tatami room for up to eight guests."><span>Tatami Room</span></button>
+      <button class="gallery-tile photo-1" data-caption="Entrance on a quiet street off the inner ring."><span>Entrance</span></button>
     </div>
   </section>
 
@@ -174,7 +251,7 @@
   <section class="visit" id="visit">
     <div class="section-head">
       <p class="eyebrow reveal">Visit</p>
-      <h2 class="reveal">Come find the lantern</h2>
+      <h2 class="reveal">Come find the door.</h2>
     </div>
     <div class="visit-grid">
       <div class="visit-info reveal">
@@ -242,9 +319,8 @@
           <span>Notes <em>(optional)</em></span>
           <textarea name="notes" rows="2" placeholder="Allergies, occasion, seating preference…"></textarea>
         </label>
-        <button type="submit" class="btn btn-primary btn-block">
+        <button type="submit" class="btn btn-dark btn-block">
           <span class="btn-label">Request table</span>
-          <span class="btn-check" aria-hidden="true">✓</span>
         </button>
         <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
       </form>
@@ -252,8 +328,28 @@
   </section>
 
   <footer class="footer">
-    <span class="nav-kanji">恵比寿商店</span>
-    <p>Ebisu Shoten · Budapest — a fictional izakaya, built as a design study.</p>
+    <div class="footer-top">
+      <div class="footer-col">
+        <p class="footer-heading">Ebisu Shoten</p>
+        <a href="#top">Home</a>
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Visit</p>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit &amp; Hours</a>
+        <a href="#visit">Reserve</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Follow</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Ebisu Shoten · Budapest — a fictional izakaya, built as a design study.</span>
+    </div>
   </footer>
 
   <!-- Lightbox -->
