@@ -4,6 +4,11 @@ const projects = [
     description: "My personal site and learning project.",
     link: "https://github.com/Querth/website",
   },
+  {
+    name: "Cafe demo",
+    description: "A demo site for a neighbourhood coffee house.",
+    link: "/cafe",
+  },
 ];
 
 export default function Home() {
