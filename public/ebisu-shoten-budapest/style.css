@@ -110,6 +110,18 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
   padding: 0.55rem 1.15rem;
 }
 .nav-cta:hover{ background: var(--ink); color: var(--cream) !important; }
+.nav-lang{
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  margin-left: clamp(0.8rem, 1.6vw, 1.6rem);
+}
+.overlay-lang{
+  position: absolute;
+  top: clamp(1.4rem, 3vw, 2.4rem);
+  right: clamp(6.2rem, 14vw, 8.5rem);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
 
 .nav-toggle{
   display: flex;
