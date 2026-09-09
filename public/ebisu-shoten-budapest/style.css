@@ -319,6 +319,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .photo-tag{ position: relative; z-index: 1; color: var(--paper); font-family: var(--serif); font-size: 1.1rem; }
 
 .photo-1{ background: radial-gradient(circle at 30% 20%, #6b5138, #241c14 75%); }
+.photo-interior{ background: url('assets/interior.jpg') center/cover no-repeat; }
 .photo-2{ background: radial-gradient(circle at 60% 30%, #4a2c22, #1a1310 75%); }
 .photo-3{ background: radial-gradient(circle at 40% 60%, #5c4326, #201810 75%); }
 .photo-4{ background: radial-gradient(circle at 50% 40%, #7a3524, #1c130e 75%); }
