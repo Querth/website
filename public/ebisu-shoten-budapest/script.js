@@ -109,8 +109,10 @@
   const showMenuPhoto = (index) => {
     menuPhotoIndex = (index + menuThumbs.length) % menuThumbs.length;
     const thumb = menuThumbs[menuPhotoIndex];
+    const label = thumb.querySelector("span").textContent;
     menuPhotoImg.src = thumb.querySelector("img").src;
-    menuPhotoCaption.textContent = `${thumb.querySelector("span").textContent} — ${menuPhotoIndex + 1} / ${menuThumbs.length}`;
+    menuPhotoImg.alt = label;
+    menuPhotoCaption.textContent = `${label} — ${menuPhotoIndex + 1} / ${menuThumbs.length}`;
   };
   const openMenuViewer = (index) => {
     showMenuPhoto(index);
