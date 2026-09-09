@@ -233,6 +233,29 @@
     <p class="menu-note reveal">Válogatás a teljes étlap kedvenceiből — átlagosan 4 000–6 000 Ft/fő itallal együtt.</p>
   </section>
 
+  <!-- Full printed menu photos -->
+  <section class="menu-photos">
+    <div class="section-head">
+      <p class="eyebrow reveal">Minden Oldal</p>
+      <h2 class="reveal">A teljes nyomtatott étlap.</h2>
+    </div>
+    <div class="menu-photos-track reveal" id="menuPhotosTrack">
+      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="" loading="lazy" /><span>Japán Tapas Tekercsek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="" loading="lazy" /><span>Kistányérok</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="" loading="lazy" /><span>Különleges Fogások</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="" loading="lazy" /><span>Sashimi</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="" loading="lazy" /><span>Nigiri és Sashimi Dobozok</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="" loading="lazy" /><span>Katsu és Rántott Ételek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="" loading="lazy" /><span>Karaage és Tempura</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="" loading="lazy" /><span>Yakimono és Grill</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="" loading="lazy" /><span>Grillezett Főételek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="" loading="lazy" /><span>Rizstálak és Saláták</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="" loading="lazy" /><span>Ramen, Curry és Desszert</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="" loading="lazy" /><span>Italok (1/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="" loading="lazy" /><span>Italok (2/2)</span></button>
+    </div>
+  </section>
+
   <!-- Carousel: signature offerings -->
   <section class="calendar">
     <div class="calendar-head reveal">
@@ -398,6 +421,15 @@
       <span>Ebisu Shoten · Gozsdu Udvar, Budapest — valós cím és étlap alapján készült design koncepció.</span>
     </div>
   </footer>
+
+  <!-- Full menu photo viewer -->
+  <div class="photo-viewer" id="menuPhotoViewer" aria-hidden="true">
+    <button class="photo-viewer-close" id="menuPhotoClose" aria-label="Bezárás">✕</button>
+    <button class="photo-viewer-nav photo-viewer-prev" id="menuPhotoPrev" aria-label="Előző oldal">←</button>
+    <img class="photo-viewer-img" id="menuPhotoImg" src="" alt="" />
+    <button class="photo-viewer-nav photo-viewer-next" id="menuPhotoNext" aria-label="Következő oldal">→</button>
+    <p class="photo-viewer-caption" id="menuPhotoCaption"></p>
+  </div>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true">

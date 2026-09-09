@@ -232,6 +232,29 @@
     <p class="menu-note reveal">A short list of highlights from the full menu — around 4,000–6,000 Ft per person with drinks.</p>
   </section>
 
+  <!-- Full printed menu photos -->
+  <section class="menu-photos">
+    <div class="section-head">
+      <p class="eyebrow reveal">Every Page</p>
+      <h2 class="reveal">The full printed menu.</h2>
+    </div>
+    <div class="menu-photos-track reveal" id="menuPhotosTrack">
+      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="" loading="lazy" /><span>Tapas Rolls</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="" loading="lazy" /><span>Small Plates</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="" loading="lazy" /><span>Specialty Dishes</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="" loading="lazy" /><span>Sashimi</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="" loading="lazy" /><span>Nigiri &amp; Sashimi Boxes</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="" loading="lazy" /><span>Katsu &amp; Fried</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="" loading="lazy" /><span>Karaage &amp; Tempura</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="" loading="lazy" /><span>Yakimono &amp; Grill</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="" loading="lazy" /><span>Grilled Mains</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="" loading="lazy" /><span>Rice Bowls &amp; Salads</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="" loading="lazy" /><span>Ramen, Curry &amp; Dessert</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="" loading="lazy" /><span>Drinks (1/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="" loading="lazy" /><span>Drinks (2/2)</span></button>
+    </div>
+  </section>
+
   <!-- Carousel: signature offerings -->
   <section class="calendar">
     <div class="calendar-head reveal">
@@ -397,6 +420,15 @@
       <span>Ebisu Shoten · Gozsdu Udvar, Budapest — a design concept built around the real address and menu.</span>
     </div>
   </footer>
+
+  <!-- Full menu photo viewer -->
+  <div class="photo-viewer" id="menuPhotoViewer" aria-hidden="true">
+    <button class="photo-viewer-close" id="menuPhotoClose" aria-label="Close">✕</button>
+    <button class="photo-viewer-nav photo-viewer-prev" id="menuPhotoPrev" aria-label="Previous page">←</button>
+    <img class="photo-viewer-img" id="menuPhotoImg" src="" alt="" />
+    <button class="photo-viewer-nav photo-viewer-next" id="menuPhotoNext" aria-label="Next page">→</button>
+    <p class="photo-viewer-caption" id="menuPhotoCaption"></p>
+  </div>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true">

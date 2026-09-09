@@ -96,6 +96,47 @@
     if (e.key === "Escape") closeLightbox();
   });
 
+  /* Full menu photo viewer */
+  const menuThumbs = Array.from(document.querySelectorAll(".menu-photo-thumb"));
+  const menuPhotoViewer = document.getElementById("menuPhotoViewer");
+  const menuPhotoImg = document.getElementById("menuPhotoImg");
+  const menuPhotoCaption = document.getElementById("menuPhotoCaption");
+  const menuPhotoClose = document.getElementById("menuPhotoClose");
+  const menuPhotoPrev = document.getElementById("menuPhotoPrev");
+  const menuPhotoNext = document.getElementById("menuPhotoNext");
+  let menuPhotoIndex = 0;
+
+  const showMenuPhoto = (index) => {
+    menuPhotoIndex = (index + menuThumbs.length) % menuThumbs.length;
+    const thumb = menuThumbs[menuPhotoIndex];
+    menuPhotoImg.src = thumb.querySelector("img").src;
+    menuPhotoCaption.textContent = `${thumb.querySelector("span").textContent} — ${menuPhotoIndex + 1} / ${menuThumbs.length}`;
+  };
+  const openMenuViewer = (index) => {
+    showMenuPhoto(index);
+    menuPhotoViewer.classList.add("is-open");
+    menuPhotoViewer.setAttribute("aria-hidden", "false");
+  };
+  const closeMenuViewer = () => {
+    menuPhotoViewer.classList.remove("is-open");
+    menuPhotoViewer.setAttribute("aria-hidden", "true");
+  };
+  menuThumbs.forEach((thumb, index) => {
+    thumb.addEventListener("click", () => openMenuViewer(index));
+  });
+  menuPhotoClose.addEventListener("click", closeMenuViewer);
+  menuPhotoPrev.addEventListener("click", () => showMenuPhoto(menuPhotoIndex - 1));
+  menuPhotoNext.addEventListener("click", () => showMenuPhoto(menuPhotoIndex + 1));
+  menuPhotoViewer.addEventListener("click", (e) => {
+    if (e.target === menuPhotoViewer) closeMenuViewer();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (!menuPhotoViewer.classList.contains("is-open")) return;
+    if (e.key === "Escape") closeMenuViewer();
+    if (e.key === "ArrowLeft") showMenuPhoto(menuPhotoIndex - 1);
+    if (e.key === "ArrowRight") showMenuPhoto(menuPhotoIndex + 1);
+  });
+
   /* Reservation form (front-end only demo) */
   const isHu = document.documentElement.lang === "hu";
   const form = document.getElementById("reserveForm");
