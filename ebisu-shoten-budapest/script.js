@@ -97,6 +97,7 @@
   });
 
   /* Reservation form (front-end only demo) */
+  const isHu = document.documentElement.lang === "hu";
   const form = document.getElementById("reserveForm");
   const status = document.getElementById("reserveStatus");
   form.addEventListener("submit", (e) => {
@@ -106,7 +107,9 @@
       return;
     }
     const data = new FormData(form);
-    status.textContent = `Thanks, ${data.get("name")} — we'll confirm your table for ${data.get("guests")} by email shortly.`;
+    status.textContent = isHu
+      ? `Köszönjük, ${data.get("name")} — hamarosan e-mailben visszaigazoljuk a(z) ${data.get("guests")} fős asztalt.`
+      : `Thanks, ${data.get("name")} — we'll confirm your table for ${data.get("guests")} by email shortly.`;
     form.reset();
   });
 
@@ -114,6 +117,8 @@
   const joinForm = document.getElementById("joinForm");
   joinForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    joinForm.innerHTML = '<p style="font-size:0.85rem;color:var(--ink-soft);margin:0;">You\'re on the list.</p>';
+    joinForm.innerHTML = isHu
+      ? '<p style="font-size:0.85rem;color:var(--ink-soft);margin:0;">Feliratkozott.</p>'
+      : '<p style="font-size:0.85rem;color:var(--ink-soft);margin:0;">You\'re on the list.</p>';
   });
 })();
