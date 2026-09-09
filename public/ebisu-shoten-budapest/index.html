@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebisu Shoten — Japanese Tapas Bar &amp; Izakaya, Budapest</title>
+  <meta name="description" content="Ebisu Shoten is a Japanese tapas bar and izakaya in Gozsdu Udvar, Budapest — kushikatsu, sashimi, robata yakimono, and a deep sake and highball list." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <span>GOZSDU UDVAR · BUDAPEST</span>
+    <span class="utility-right">
+      <span class="utility-phone">RESERVATIONS · +36 30 233 1214</span>
+      <span class="lang-switch">
+        <a href="index.html" class="is-active">EN</a> · <a href="hu.html">HU</a>
+      </span>
+    </span>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand">
+      <img src="assets/logo.png" alt="Ebisu Shoten" class="brand-logo" />
+      <span class="nav-brand-text">EBISU SHOTEN</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#story" data-nav>Story</a>
+      <a href="#menu" data-nav>Menu</a>
+      <a href="#gallery" data-nav>Gallery</a>
+      <a href="#visit" data-nav>Visit</a>
+      <a href="#visit" class="nav-cta" data-nav>Reserve</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Full-screen nav overlay -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <span class="overlay-ghost">恵比寿</span>
+    <div class="overlay-grid">
+      <div class="overlay-col">
+        <a data-nav-overlay href="#top">Home</a>
+        <a data-nav-overlay href="#story">Story</a>
+        <a data-nav-overlay href="#menu">Menu</a>
+        <a data-nav-overlay href="#gallery">Gallery</a>
+        <a data-nav-overlay href="#visit">Visit</a>
+      </div>
+      <div class="overlay-col">
+        <a href="tel:+36302331214">+36 30 233 1214</a>
+        <a href="mailto:hello@ebisushoten.hu">hello@ebisushoten.hu</a>
+        <a href="https://instagram.com/ebisushotenbud">Instagram</a>
+      </div>
+      <div class="overlay-col overlay-join">
+        <p class="overlay-join-title">First seating, first pour.</p>
+        <p class="overlay-join-copy">Join the list for seasonal menus and counter openings before they're announced.</p>
+        <form class="overlay-join-form" id="joinForm">
+          <input type="email" placeholder="Email address" required aria-label="Email address" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">Close</button>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Japanese Tapas Bar &amp; Izakaya</p>
+      <h1 class="hero-word reveal">EBISU<br />SHOTEN</h1>
+    </div>
+  </section>
+
+  <!-- Story intro -->
+  <section class="intro" id="story">
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p class="eyebrow">Ebisu Shoten</p>
+        <h2>Gather at<br />the counter.</h2>
+        <p>
+          Ebisu is the only one of Japan's seven lucky gods said to be
+          purely native — a fisherman's god, always smiling, always a
+          little late, because he can't hear the other gods calling
+          from the ceiling of heaven. He waits. Good things come to
+          the patient.
+        </p>
+        <p>
+          Ebisu Shoten — "Ebisu's shop" — opened in Gozsdu Udvar, the
+          passage off Dob utca in Budapest's old Jewish Quarter, with
+          the same idea. Sit at the counter. Let the coals do the work.
+          Skewers over binchōtan charcoal, small plates built around
+          what came in that morning, and a back bar stocked deep with
+          sake, shōchū and Japanese whisky.
+        </p>
+        <a href="#visit" class="btn btn-dark">Make your reservation</a>
+      </div>
+      <div class="intro-media reveal">
+        <div class="photo photo-interior"><span class="photo-tag">The dining room</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split duo -->
+  <section class="duo">
+    <button class="duo-half photo-2 reveal" data-caption="The counter — 24 seats around the charcoal grill.">
+      <span class="photo-tag">The Counter</span>
+    </button>
+    <button class="duo-half photo-3 reveal" data-caption="Back bar — sake, shōchū and Japanese whisky.">
+      <span class="photo-tag">Back Bar</span>
+    </button>
+  </section>
+
+  <!-- Full-bleed CTA break -->
+  <section class="break">
+    <div class="break-media" aria-hidden="true"></div>
+    <div class="break-inner reveal">
+      <p class="eyebrow">Ebisu Shoten Rewards</p>
+      <h2>An occasion,<br />poured slow.</h2>
+      <p class="break-copy">
+        No two nights at the counter are the same — the fish changes with
+        the tide, the sake list turns with the season. Come back often
+        and it still surprises you.
+      </p>
+      <div class="break-actions">
+        <a href="#visit" class="btn btn-light">Reserve a table</a>
+        <a href="#menu" class="btn btn-outline-light">View menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kitchen philosophy (reversed editorial) -->
+  <section class="intro intro-reverse">
+    <div class="intro-grid">
+      <div class="intro-media reveal">
+        <div class="photo photo-4"><span class="photo-tag">Robata grill</span></div>
+      </div>
+      <div class="intro-text reveal">
+        <p class="eyebrow">Kitchen &amp; Bar</p>
+        <h2>Distilled to<br />a short list.</h2>
+        <p>
+          Budapest is a city of contrasts too — grand boulevards and
+          back-street bars, ruin pubs and quiet counters. Ebisu Shoten
+          sits in that second Budapest: unmarked door, low light, no
+          rush.
+        </p>
+        <p>
+          It's in the chicken turned by hand over binchōtan. It's in
+          the thirty-odd bottles of sake kept at the right temperature,
+          each one poured by someone who can tell you why. It's in
+          keeping the menu short enough that everything on it is done
+          properly.
+        </p>
+        <a href="#menu" class="btn btn-dark">See what's on tonight</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <p class="eyebrow reveal">Kitchen &amp; Bar</p>
+      <h2 class="reveal">A short menu, done properly.</h2>
+    </div>
+
+    <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab is-active" data-tab="tapas" role="tab" aria-selected="true">Tapas</button>
+      <button class="menu-tab" data-tab="sashimi" role="tab" aria-selected="false">Sashimi &amp; Sushi</button>
+      <button class="menu-tab" data-tab="katsu" role="tab" aria-selected="false">Kushikatsu</button>
+      <button class="menu-tab" data-tab="yakimono" role="tab" aria-selected="false">Yakimono</button>
+      <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Rice, Noodle &amp; Curry</button>
+    </div>
+
+    <div class="menu-body">
+    <div class="menu-panels reveal">
+      <ul class="menu-panel is-active" id="panel-tapas" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Osaka Takoyaki (5 pcs)</span><span class="mi-note">大阪名物たこ焼き</span></div><span class="mi-price">1 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Sake-Steamed Clams</span><span class="mi-note">あさりの酒蒸し</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Seared Beef Tataki, Yuzu Ponzu</span><span class="mi-note">牛肉のたたき</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Yellowtail Carpaccio, Sesame Sauce</span><span class="mi-note">ハマチのカルパッチョ</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Negitoro — Tuna &amp; Spring Onion Roll</span><span class="mi-note">ねぎとろ細巻き</span></div><span class="mi-price">2 580 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-sashimi" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Bluefin Tuna Sashimi</span><span class="mi-note">本マグロ刺身</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Salmon Sashimi</span><span class="mi-note">サーモン刺身</span></div><span class="mi-price">1 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Seared Wagyu Beef Nigiri</span><span class="mi-note">炙り和牛握り</span></div><span class="mi-price">1 780 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Ikura Salmon Roe Battleship Nigiri</span><span class="mi-note">いくら軍艦握り</span></div><span class="mi-price">1 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">DIY Hand Roll Sushi Set</span><span class="mi-note">手巻き寿司セット</span></div><span class="mi-price">1 580 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-katsu" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Ebisu Specialty Tori Karaage</span><span class="mi-note">名物 若鶏の唐揚げ</span></div><span class="mi-price">2 480 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Japanese-Style Pork Cutlet</span><span class="mi-note">和風とんかつ</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Fried Chicken, Sweet Vinegar &amp; Tartar</span><span class="mi-note">チキン南蛮</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Pork Cutlet with Egg (Katsutoji)</span><span class="mi-note">かつ煮</span></div><span class="mi-price">3 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Assorted Tempura Platter (7 Kinds)</span><span class="mi-note">天ぷら盛り合わせ</span></div><span class="mi-price">3 580 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-yakimono" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Ebisu's Homemade Gyoza (6 pcs)</span><span class="mi-note">自家製パリパリ焼き餃子</span></div><span class="mi-price">2 380 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Tonpeiyaki — Pork &amp; Egg Omelette</span><span class="mi-note">とん平焼き</span></div><span class="mi-price">1 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Grilled Beef Tongue (Gyutan)</span><span class="mi-note">牛タン塩焼き</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Miso-Marinated Black Cod (Saikyo)</span><span class="mi-note">銀だら西京焼き</span></div><span class="mi-price">3 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Grilled Eel Kabayaki Platter</span><span class="mi-note">うなぎ蒲焼き</span></div><span class="mi-price">4 980 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-mains" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Assorted Seafood Rice Bowl</span><span class="mi-note">豪華海鮮丼</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Crispy Pork Cutlet Curry</span><span class="mi-note">ロースカツカレー</span></div><span class="mi-price">4 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Pork Katsu Rice Bowl (Katsudon)</span><span class="mi-note">かつ丼</span></div><span class="mi-price">4 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Rich Miso Ramen</span><span class="mi-note">特製 味噌ラーメン</span></div><span class="mi-price">4 180 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Deluxe Grilled Eel Bowl (Unadon)</span><span class="mi-note">特上 うな重</span></div><span class="mi-price">5 980 Ft</span></li>
+      </ul>
+    </div>
+
+    <aside class="menu-bar reveal">
+      <p class="menu-bar-title">From the Bar</p>
+      <ul>
+        <li class="menu-item"><div><span class="mi-name">Asahi Super Dry Draft (0.5L)</span><span class="mi-note">生ビール</span></div><span class="mi-price">1 480 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Fresh Lemon Shochu Sour</span><span class="mi-note">生搾りレモンサワー</span></div><span class="mi-price">2 380 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Suntory Kaku Highball</span><span class="mi-note">角ハイボール</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Dassai 45 Junmai Daiginjo Sake</span><span class="mi-note">獺祭 45 純米大吟醸</span></div><span class="mi-price">4 280 Ft</span></li>
+      </ul>
+    </aside>
+    </div>
+    <p class="menu-note reveal">A short list of highlights from the full menu — around 4,000–6,000 Ft per person with drinks.</p>
+  </section>
+
+  <!-- Full printed menu photos -->
+  <section class="menu-photos">
+    <div class="section-head">
+      <p class="eyebrow reveal">Every Page</p>
+      <h2 class="reveal">The full printed menu.</h2>
+    </div>
+    <div class="menu-photos-track reveal" id="menuPhotosTrack">
+      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="" loading="lazy" /><span>Tapas Rolls</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="" loading="lazy" /><span>Small Plates</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="" loading="lazy" /><span>Specialty Dishes</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="" loading="lazy" /><span>Sashimi</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="" loading="lazy" /><span>Nigiri &amp; Sashimi Boxes</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="" loading="lazy" /><span>Katsu &amp; Fried</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="" loading="lazy" /><span>Karaage &amp; Tempura</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="" loading="lazy" /><span>Yakimono &amp; Grill</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="" loading="lazy" /><span>Grilled Mains</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="" loading="lazy" /><span>Rice Bowls &amp; Salads</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="" loading="lazy" /><span>Ramen, Curry &amp; Dessert</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="" loading="lazy" /><span>Drinks (1/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="" loading="lazy" /><span>Drinks (2/2)</span></button>
+    </div>
+  </section>
+
+  <!-- Carousel: signature offerings -->
+  <section class="calendar">
+    <div class="calendar-head reveal">
+      <div>
+        <p class="eyebrow">Our Craft &amp; Offerings</p>
+        <h2>Artisanal Japanese izakaya services.</h2>
+      </div>
+      <div class="calendar-nav">
+        <button id="carPrev" aria-label="Previous">←</button>
+        <button id="carNext" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="calendar-track" id="calendarTrack">
+      <article class="cal-card">
+        <div class="cal-media cal-media-1"><span class="cal-badge">Signature</span></div>
+        <h3>Japanese Tapas &amp; Kushikatsu</h3>
+        <p>Ultra-crispy panko-breaded skewers fried to golden perfection with our house tare dipping sauce, edamame, and seasonal small plates.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-2"><span class="cal-badge">Flame-Grilled</span></div>
+        <h3>Robata &amp; Charcoal Yakimono</h3>
+        <p>Tender chicken yakitori, wagyu beef skewers, and sweet miso-glazed eggplant grilled live over fiery coals.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-3"><span class="cal-badge">Fresh Catch</span></div>
+        <h3>Nigiri, Sashimi &amp; Hand Rolls</h3>
+        <p>Premium salmon, bluefin tuna, sea bass, and hotate scallop sliced with master precision, served on seasoned Koshihikari rice.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-4"><span class="cal-badge">Comfort Food</span></div>
+        <h3>Comforting Ramen &amp; Curries</h3>
+        <p>Simmered rich broths, silky hand-crafted noodles, and aromatic Japanese golden katsu curries for hearty satisfaction.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-1"><span class="cal-badge">Bar Program</span></div>
+        <h3>Craft Sake, Highballs &amp; Draught Asahi</h3>
+        <p>Chilled highballs with super-carbonated soda, artisan Junmai and Daiginjo sakes, and crisp Asahi Super Dry on draught.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-2"><span class="cal-badge">Events</span></div>
+        <h3>Private Bookings &amp; Group Gatherings</h3>
+        <p>Host your birthday, corporate dinner, or private reception in our warm, lantern-lit dining room or semi-private counter.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow reveal">Inside</p>
+      <h2 class="reveal">The room</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <button class="gallery-tile photo-2" data-caption="The counter — 24 seats around the charcoal grill."><span>The Counter</span></button>
+      <button class="gallery-tile photo-3" data-caption="Back bar — sake, shōchū and Japanese whisky."><span>Back Bar</span></button>
+      <button class="gallery-tile photo-4" data-caption="Robata grill — binchōtan charcoal, low and slow."><span>Robata Grill</span></button>
+      <button class="gallery-tile photo-5" data-caption="Private tatami room for up to eight guests."><span>Tatami Room</span></button>
+      <button class="gallery-tile photo-1" data-caption="Entrance in Gozsdu Udvar, off Dob utca."><span>Entrance</span></button>
+    </div>
+  </section>
+
+  <!-- Visit / Contact -->
+  <section class="visit" id="visit">
+    <div class="section-head">
+      <p class="eyebrow reveal">Visit</p>
+      <h2 class="reveal">Come find the door.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-info reveal">
+        <dl>
+          <div class="visit-row">
+            <dt>Address</dt>
+            <dd>Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Hungary</dd>
+          </div>
+          <div class="visit-row">
+            <dt>Hours</dt>
+            <dd>
+              Monday – Friday 17:00–24:00<br />
+              Saturday – Sunday 12:00–24:00
+            </dd>
+          </div>
+          <div class="visit-row">
+            <dt>Contact</dt>
+            <dd>
+              <a href="tel:+36302331214">+36 30 233 1214</a><br />
+              <a href="mailto:hello@ebisushoten.hu">hello@ebisushoten.hu</a>
+            </dd>
+          </div>
+          <div class="visit-row">
+            <dt>Follow</dt>
+            <dd class="visit-social">
+              <a href="https://instagram.com/ebisushotenbud">Instagram @ebisushotenbud</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="reserve-form reveal" id="reserveForm" novalidate>
+        <p class="reserve-title">Reserve a table</p>
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span>Guests</span>
+            <select name="guests" required>
+              <option value="">—</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Date</span>
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            <span>Time</span>
+            <input type="time" name="time" required />
+          </label>
+        </div>
+        <label class="full">
+          <span>Email</span>
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label class="full">
+          <span>Notes <em>(optional)</em></span>
+          <textarea name="notes" rows="2" placeholder="Allergies, occasion, seating preference…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark btn-block">
+          <span class="btn-label">Request table</span>
+        </button>
+        <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <p class="footer-heading footer-brand">
+          <img src="assets/logo.png" alt="" class="brand-logo brand-logo-sm" />
+          Ebisu Shoten
+        </p>
+        <a href="#top">Home</a>
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Visit</p>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit &amp; Hours</a>
+        <a href="#visit">Reserve</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Follow</p>
+        <a href="https://instagram.com/ebisushotenbud">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Ebisu Shoten · Gozsdu Udvar, Budapest — a design concept built around the real address and menu.</span>
+    </div>
+  </footer>
+
+  <!-- Full menu photo viewer -->
+  <div class="photo-viewer" id="menuPhotoViewer" aria-hidden="true">
+    <button class="photo-viewer-close" id="menuPhotoClose" aria-label="Close">✕</button>
+    <button class="photo-viewer-nav photo-viewer-prev" id="menuPhotoPrev" aria-label="Previous page">←</button>
+    <img class="photo-viewer-img" id="menuPhotoImg" src="" alt="" />
+    <button class="photo-viewer-nav photo-viewer-next" id="menuPhotoNext" aria-label="Next page">→</button>
+    <p class="photo-viewer-caption" id="menuPhotoCaption"></p>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

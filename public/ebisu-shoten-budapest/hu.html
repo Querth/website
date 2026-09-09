@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebisu Shoten — Japán Tapas Bár és Izakaya, Budapest</title>
+  <meta name="description" content="Az Ebisu Shoten egy japán tapas bár és izakaya a Gozsdu Udvarban, Budapesten — kushikatsu, sashimi, robata yakimono és mély szaké- és highball-választék." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <span>GOZSDU UDVAR · BUDAPEST</span>
+    <span class="utility-right">
+      <span class="utility-phone">ASZTALFOGLALÁS · +36 30 233 1214</span>
+      <span class="lang-switch">
+        <a href="index.html">EN</a> · <a href="hu.html" class="is-active">HU</a>
+      </span>
+    </span>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand">
+      <img src="assets/logo.png" alt="Ebisu Shoten" class="brand-logo" />
+      <span class="nav-brand-text">EBISU SHOTEN</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#story" data-nav>Történet</a>
+      <a href="#menu" data-nav>Étlap</a>
+      <a href="#gallery" data-nav>Galéria</a>
+      <a href="#visit" data-nav>Látogatás</a>
+      <a href="#visit" class="nav-cta" data-nav>Asztalfoglalás</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Full-screen nav overlay -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <span class="overlay-ghost">恵比寿</span>
+    <div class="overlay-grid">
+      <div class="overlay-col">
+        <a data-nav-overlay href="#top">Kezdőlap</a>
+        <a data-nav-overlay href="#story">Történet</a>
+        <a data-nav-overlay href="#menu">Étlap</a>
+        <a data-nav-overlay href="#gallery">Galéria</a>
+        <a data-nav-overlay href="#visit">Látogatás</a>
+      </div>
+      <div class="overlay-col">
+        <a href="tel:+36302331214">+36 30 233 1214</a>
+        <a href="mailto:hello@ebisushoten.hu">hello@ebisushoten.hu</a>
+        <a href="https://instagram.com/ebisushotenbud">Instagram</a>
+      </div>
+      <div class="overlay-col overlay-join">
+        <p class="overlay-join-title">Az első asztal, az első pohár.</p>
+        <p class="overlay-join-copy">Iratkozzon fel, hogy elsőként értesüljön szezonális ételeinkről és pultnyitásainkról.</p>
+        <form class="overlay-join-form" id="joinForm">
+          <input type="email" placeholder="E-mail cím" required aria-label="E-mail cím" />
+          <button type="submit">Feliratkozás</button>
+        </form>
+      </div>
+    </div>
+    <button class="overlay-close" id="overlayClose" aria-label="Menü bezárása">Bezárás</button>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Japán Tapas Bár és Izakaya</p>
+      <h1 class="hero-word reveal">EBISU<br />SHOTEN</h1>
+    </div>
+  </section>
+
+  <!-- Story intro -->
+  <section class="intro" id="story">
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p class="eyebrow">Ebisu Shoten</p>
+        <h2>Gyűljünk össze<br />a pultnál.</h2>
+        <p>
+          Ebisu Japán hét szerencseistene közül az egyetlen, aki tisztán
+          honi eredetű — a halászok istene, mindig mosolyog, és mindig
+          kicsit elkésik, mert nem hallja, amikor a többi isten szólítja
+          az ég mennyezetéről. Ő vár. A jó dolgok a türelmesekhez érkeznek.
+        </p>
+        <p>
+          Az Ebisu Shoten — vagyis "Ebisu boltja" — ugyanezzel a
+          gondolattal nyílt meg a Gozsdu Udvarban, a Dob utcai
+          passzázsban, Budapest régi zsidónegyedében. Üljön le a pulthoz.
+          Hagyja, hogy a parázs végezze a dolgát. Nyársak binchōtan
+          faszénen, aznap reggel beérkezett alapanyagokból készült
+          kistányérok, és egy mélyen feltöltött bárpult szakéval,
+          shōchūval és japán whiskyvel.
+        </p>
+        <a href="#visit" class="btn btn-dark">Asztal foglalása</a>
+      </div>
+      <div class="intro-media reveal">
+        <div class="photo photo-interior"><span class="photo-tag">Az étterem</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split duo -->
+  <section class="duo">
+    <button class="duo-half photo-2 reveal" data-caption="A pult — 24 hely a faszenes grill körül.">
+      <span class="photo-tag">A Pult</span>
+    </button>
+    <button class="duo-half photo-3 reveal" data-caption="Bárpult — szaké, shōchū és japán whisky.">
+      <span class="photo-tag">A Bárpult</span>
+    </button>
+  </section>
+
+  <!-- Full-bleed CTA break -->
+  <section class="break">
+    <div class="break-media" aria-hidden="true"></div>
+    <div class="break-inner reveal">
+      <p class="eyebrow">Ebisu Shoten Élmény</p>
+      <h2>Egy alkalom,<br />lassan kitöltve.</h2>
+      <p class="break-copy">
+        Nincs két egyforma este a pultnál — a hal az árapállyal változik,
+        a szakélista az évszakokkal fordul. Térjen vissza gyakran, és
+        még mindig meg fogja lepni.
+      </p>
+      <div class="break-actions">
+        <a href="#visit" class="btn btn-light">Asztalfoglalás</a>
+        <a href="#menu" class="btn btn-outline-light">Étlap megtekintése</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kitchen philosophy (reversed editorial) -->
+  <section class="intro intro-reverse">
+    <div class="intro-grid">
+      <div class="intro-media reveal">
+        <div class="photo photo-4"><span class="photo-tag">Robata grill</span></div>
+      </div>
+      <div class="intro-text reveal">
+        <p class="eyebrow">Konyha és Bár</p>
+        <h2>Lepárolva egy<br />rövid listára.</h2>
+        <p>
+          Budapest is az ellentétek városa — nagy sugárutak és hátsó
+          utcai bárok, romkocsmák és csendes pultok. Az Ebisu Shoten
+          ebben a második Budapestben található: jelöletlen ajtó, tompa
+          fény, semmi kapkodás.
+        </p>
+        <p>
+          Ott van a kézzel forgatott csirkében a binchōtan felett. Ott
+          van a harminc-egynéhány szakésüvegben, amelyeket a megfelelő
+          hőmérsékleten tartunk, és mindegyiket olyasvalaki tölti ki,
+          aki el is tudja mondani, miért éppen azt. És ott van abban,
+          hogy az étlapot elég rövidre fogjuk ahhoz, hogy minden rajta
+          lévő étel rendesen elkészüljön.
+        </p>
+        <a href="#menu" class="btn btn-dark">Nézze meg a mai kínálatot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <p class="eyebrow reveal">Konyha és Bár</p>
+      <h2 class="reveal">Rövid étlap, rendesen elkészítve.</h2>
+    </div>
+
+    <div class="menu-tabs reveal" role="tablist" aria-label="Étlap kategóriák">
+      <button class="menu-tab is-active" data-tab="tapas" role="tab" aria-selected="true">Tapas</button>
+      <button class="menu-tab" data-tab="sashimi" role="tab" aria-selected="false">Sashimi és Sushi</button>
+      <button class="menu-tab" data-tab="katsu" role="tab" aria-selected="false">Kushikatsu</button>
+      <button class="menu-tab" data-tab="yakimono" role="tab" aria-selected="false">Yakimono</button>
+      <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Rizs, Tészta és Curry</button>
+    </div>
+
+    <div class="menu-body">
+    <div class="menu-panels reveal">
+      <ul class="menu-panel is-active" id="panel-tapas" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Oszakai Takoyaki (5 db)</span><span class="mi-note">大阪名物たこ焼き</span></div><span class="mi-price">1 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Szakéban Párolt Kagyló</span><span class="mi-note">あさりの酒蒸し</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Marha Tataki, Yuzu Ponzu</span><span class="mi-note">牛肉のたたき</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Sárgafarkú Carpaccio, Szezámmártással</span><span class="mi-note">ハマチのカルパッチョ</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Negitoro — Tonhal és Újhagyma Tekercs</span><span class="mi-note">ねぎとろ細巻き</span></div><span class="mi-price">2 580 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-sashimi" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Kékúszójú Tonhal Sashimi</span><span class="mi-note">本マグロ刺身</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Lazac Sashimi</span><span class="mi-note">サーモン刺身</span></div><span class="mi-price">1 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Perzselt Wagyu Marha Nigiri</span><span class="mi-note">炙り和牛握り</span></div><span class="mi-price">1 780 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Ikura Lazacikra Gunkan Nigiri</span><span class="mi-note">いくら軍艦握り</span></div><span class="mi-price">1 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Magad Készítette Kézi Tekercs Szett</span><span class="mi-note">手巻き寿司セット</span></div><span class="mi-price">1 580 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-katsu" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Ebisu Különleges Csirke Karaage</span><span class="mi-note">名物 若鶏の唐揚げ</span></div><span class="mi-price">2 480 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Japán Stílusú Sertésszelet</span><span class="mi-note">和風とんかつ</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Rántott Csirke, Édes Ecettel és Tartármártással</span><span class="mi-note">チキン南蛮</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Sertésszelet Tojással (Katsutoji)</span><span class="mi-note">かつ煮</span></div><span class="mi-price">3 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Vegyes Tempura Tál (7 Féle)</span><span class="mi-note">天ぷら盛り合わせ</span></div><span class="mi-price">3 580 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-yakimono" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Ebisu Házi Gyoza (6 db)</span><span class="mi-note">自家製パリパリ焼き餃子</span></div><span class="mi-price">2 380 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Tonpeiyaki — Sertés és Tojás Omlett</span><span class="mi-note">とん平焼き</span></div><span class="mi-price">1 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Grillezett Marhanyelv (Gyutan)</span><span class="mi-note">牛タン塩焼き</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Misóban Pácolt Fekete Tőkehal (Saikyo)</span><span class="mi-note">銀だら西京焼き</span></div><span class="mi-price">3 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Grillezett Angolna Kabayaki Tál</span><span class="mi-note">うなぎ蒲焼き</span></div><span class="mi-price">4 980 Ft</span></li>
+      </ul>
+      <ul class="menu-panel" id="panel-mains" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">Vegyes Tenger Gyümölcsei Rizstál</span><span class="mi-note">豪華海鮮丼</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Ropogós Sertésszelet Curry</span><span class="mi-note">ロースカツカレー</span></div><span class="mi-price">4 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Sertés Katsu Rizstál (Katsudon)</span><span class="mi-note">かつ丼</span></div><span class="mi-price">4 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Gazdag Miso Ramen</span><span class="mi-note">特製 味噌ラーメン</span></div><span class="mi-price">4 180 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Prémium Grillezett Angolna Tál (Unadon)</span><span class="mi-note">特上 うな重</span></div><span class="mi-price">5 980 Ft</span></li>
+      </ul>
+    </div>
+
+    <aside class="menu-bar reveal">
+      <p class="menu-bar-title">A Bárpultról</p>
+      <ul>
+        <li class="menu-item"><div><span class="mi-name">Asahi Super Dry Csapolt (0,5L)</span><span class="mi-note">生ビール</span></div><span class="mi-price">1 480 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Friss Citromos Shochu Sour</span><span class="mi-note">生搾りレモンサワー</span></div><span class="mi-price">2 380 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Suntory Kaku Highball</span><span class="mi-note">角ハイボール</span></div><span class="mi-price">2 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Dassai 45 Junmai Daiginjo Szaké</span><span class="mi-note">獺祭 45 純米大吟醸</span></div><span class="mi-price">4 280 Ft</span></li>
+      </ul>
+    </aside>
+    </div>
+    <p class="menu-note reveal">Válogatás a teljes étlap kedvenceiből — átlagosan 4 000–6 000 Ft/fő itallal együtt.</p>
+  </section>
+
+  <!-- Full printed menu photos -->
+  <section class="menu-photos">
+    <div class="section-head">
+      <p class="eyebrow reveal">Minden Oldal</p>
+      <h2 class="reveal">A teljes nyomtatott étlap.</h2>
+    </div>
+    <div class="menu-photos-track reveal" id="menuPhotosTrack">
+      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="" loading="lazy" /><span>Japán Tapas Tekercsek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="" loading="lazy" /><span>Kistányérok</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="" loading="lazy" /><span>Különleges Fogások</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="" loading="lazy" /><span>Sashimi</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="" loading="lazy" /><span>Nigiri és Sashimi Dobozok</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="" loading="lazy" /><span>Katsu és Rántott Ételek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="" loading="lazy" /><span>Karaage és Tempura</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="" loading="lazy" /><span>Yakimono és Grill</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="" loading="lazy" /><span>Grillezett Főételek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="" loading="lazy" /><span>Rizstálak és Saláták</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="" loading="lazy" /><span>Ramen, Curry és Desszert</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="" loading="lazy" /><span>Italok (1/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="" loading="lazy" /><span>Italok (2/2)</span></button>
+    </div>
+  </section>
+
+  <!-- Carousel: signature offerings -->
+  <section class="calendar">
+    <div class="calendar-head reveal">
+      <div>
+        <p class="eyebrow">Kínálatunk &amp; Mesterségünk</p>
+        <h2>Kézműves japán izakaya szolgáltatások.</h2>
+      </div>
+      <div class="calendar-nav">
+        <button id="carPrev" aria-label="Előző">←</button>
+        <button id="carNext" aria-label="Következő">→</button>
+      </div>
+    </div>
+    <div class="calendar-track" id="calendarTrack">
+      <article class="cal-card">
+        <div class="cal-media cal-media-1"><span class="cal-badge">Ház Specialitása</span></div>
+        <h3>Japán Tapasok és Kushikatsu</h3>
+        <p>Aranybarnára sült, ropogós panko-bundás nyársak a ház titkos tare mártásával, edamame és szezonális kistányérok.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-2"><span class="cal-badge">Faszénen Sült</span></div>
+        <h3>Robata és Faszénen Sült Yakimono</h3>
+        <p>Szaftos yakitori csirkenyársak, wagyu marha és édes miso-mázzal pirított padlizsán izzó parázson sütve.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-3"><span class="cal-badge">Friss Fogás</span></div>
+        <h3>Nigiri, Sashimi és Kézi Tekercsek</h3>
+        <p>Prémium minőségű lazac, kékúszójú tonhal és fésűkagyló mesteri pontossággal szeletelve, fűszerezett Koshihikari rizzsel.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-4"><span class="cal-badge">Kényeztető Ételek</span></div>
+        <h3>Laktató Rámenek és Japán Curry</h3>
+        <p>Hosszan főzött sűrű alaplevek, selymes kézműves tészták és illatos arany japán katsu curry a teljes kényeztetésért.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-1"><span class="cal-badge">Bárprogram</span></div>
+        <h3>Prémium Szakék, Highball és Csapolt Asahi</h3>
+        <p>Jéghideg highballok pezsgő szódával, kézműves Junmai és Daiginjo szakék, és ropogós csapolt Asahi Super Dry.</p>
+      </article>
+      <article class="cal-card">
+        <div class="cal-media cal-media-2"><span class="cal-badge">Rendezvények</span></div>
+        <h3>Zártkörű Rendezvények és Csoportok</h3>
+        <p>Ünnepelje születésnapját, céges vacsoráját vagy privát eseményét hangulatos, lampionos éttermünkben vagy félprivát pultunknál.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow reveal">Belülről</p>
+      <h2 class="reveal">A tér</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <button class="gallery-tile photo-2" data-caption="A pult — 24 hely a faszenes grill körül."><span>A Pult</span></button>
+      <button class="gallery-tile photo-3" data-caption="Bárpult — szaké, shōchū és japán whisky."><span>A Bárpult</span></button>
+      <button class="gallery-tile photo-4" data-caption="Robata grill — binchōtan faszén, lassan és alacsony hőn."><span>Robata Grill</span></button>
+      <button class="gallery-tile photo-5" data-caption="Privát tatami szoba akár nyolc fő részére."><span>Tatami Szoba</span></button>
+      <button class="gallery-tile photo-1" data-caption="Bejárat a Gozsdu Udvarban, a Dob utca felől."><span>Bejárat</span></button>
+    </div>
+  </section>
+
+  <!-- Visit / Contact -->
+  <section class="visit" id="visit">
+    <div class="section-head">
+      <p class="eyebrow reveal">Látogatás</p>
+      <h2 class="reveal">Találja meg az ajtót.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-info reveal">
+        <dl>
+          <div class="visit-row">
+            <dt>Cím</dt>
+            <dd>Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Magyarország</dd>
+          </div>
+          <div class="visit-row">
+            <dt>Nyitvatartás</dt>
+            <dd>
+              Hétfő – Péntek 17:00–24:00<br />
+              Szombat – Vasárnap 12:00–24:00
+            </dd>
+          </div>
+          <div class="visit-row">
+            <dt>Kapcsolat</dt>
+            <dd>
+              <a href="tel:+36302331214">+36 30 233 1214</a><br />
+              <a href="mailto:hello@ebisushoten.hu">hello@ebisushoten.hu</a>
+            </dd>
+          </div>
+          <div class="visit-row">
+            <dt>Kövessen</dt>
+            <dd class="visit-social">
+              <a href="https://instagram.com/ebisushotenbud">Instagram @ebisushotenbud</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="reserve-form reveal" id="reserveForm" novalidate>
+        <p class="reserve-title">Asztalfoglalás</p>
+        <div class="form-row">
+          <label>
+            <span>Név</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span>Létszám</span>
+            <select name="guests" required>
+              <option value="">—</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Dátum</span>
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            <span>Időpont</span>
+            <input type="time" name="time" required />
+          </label>
+        </div>
+        <label class="full">
+          <span>E-mail</span>
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label class="full">
+          <span>Megjegyzés <em>(opcionális)</em></span>
+          <textarea name="notes" rows="2" placeholder="Allergia, alkalom, ülésrend preferencia…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark btn-block">
+          <span class="btn-label">Asztal kérése</span>
+        </button>
+        <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <p class="footer-heading footer-brand">
+          <img src="assets/logo.png" alt="" class="brand-logo brand-logo-sm" />
+          Ebisu Shoten
+        </p>
+        <a href="#top">Kezdőlap</a>
+        <a href="#story">Történet</a>
+        <a href="#menu">Étlap</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Látogatás</p>
+        <a href="#gallery">Galéria</a>
+        <a href="#visit">Nyitvatartás</a>
+        <a href="#visit">Asztalfoglalás</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Kövessen</p>
+        <a href="https://instagram.com/ebisushotenbud">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Ebisu Shoten · Gozsdu Udvar, Budapest — valós cím és étlap alapján készült design koncepció.</span>
+    </div>
+  </footer>
+
+  <!-- Full menu photo viewer -->
+  <div class="photo-viewer" id="menuPhotoViewer" aria-hidden="true">
+    <button class="photo-viewer-close" id="menuPhotoClose" aria-label="Bezárás">✕</button>
+    <button class="photo-viewer-nav photo-viewer-prev" id="menuPhotoPrev" aria-label="Előző oldal">←</button>
+    <img class="photo-viewer-img" id="menuPhotoImg" src="" alt="" />
+    <button class="photo-viewer-nav photo-viewer-next" id="menuPhotoNext" aria-label="Következő oldal">→</button>
+    <p class="photo-viewer-caption" id="menuPhotoCaption"></p>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Kép bezárása">✕</button>
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
