@@ -335,6 +335,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .photo-1{ background: radial-gradient(circle at 30% 20%, #6b5138, #241c14 75%); }
 .photo-interior{ background: url('assets/interior.jpg') center/cover no-repeat; }
 .photo-2{ background: radial-gradient(circle at 60% 30%, #4a2c22, #1a1310 75%); }
+.photo-counter{ background: url('assets/decor/counter.jpg') center/cover no-repeat; }
 .photo-3{ background: radial-gradient(circle at 40% 60%, #5c4326, #201810 75%); }
 .photo-4{ background: radial-gradient(circle at 50% 40%, #7a3524, #1c130e 75%); }
 .photo-5{ background: radial-gradient(circle at 55% 35%, #3c342a, #16120e 75%); }
@@ -515,6 +516,8 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .cal-media-3{ background: radial-gradient(circle at 30% 60%, #4a2c22, #1a1310 75%); }
 .cal-media-4{ background: radial-gradient(circle at 50% 50%, #6b5138, #241c14 75%); }
 .cal-media-ramen{ background: url('assets/dishes/miso-ramen.jpg') center/cover no-repeat; }
+.cal-media-kushikatsu{ background: url('assets/dishes/kushikatsu-skewers.jpg') center/cover no-repeat; }
+.cal-media-platter{ background: url('assets/dishes/sashimi-platter.jpg') center/cover no-repeat; }
 .cal-card h3{ font-size: 1.25rem; margin-bottom: 0.5rem; }
 .cal-card p{ font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0; }
 
