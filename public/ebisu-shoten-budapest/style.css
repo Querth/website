@@ -445,6 +445,9 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .mi-note{ display:block; font-size: 0.83rem; color: var(--ink-soft); margin-top: 0.15rem; }
 .mi-price{ font-size: 0.92rem; color: var(--ink-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
+.menu-item.has-photo{ align-items: center; }
+.mi-photo{ width: 56px; height: 56px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+
 .menu-note{ text-align: center; margin-top: 2.4rem; font-size: 0.78rem; color: var(--ink-soft); opacity: 0.75; }
 
 /* ---------------- Calendar / carousel ---------------- */
@@ -511,6 +514,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .cal-media-2{ background: radial-gradient(circle at 60% 40%, #7a3524, #1c130e 75%); }
 .cal-media-3{ background: radial-gradient(circle at 30% 60%, #4a2c22, #1a1310 75%); }
 .cal-media-4{ background: radial-gradient(circle at 50% 50%, #6b5138, #241c14 75%); }
+.cal-media-ramen{ background: url('assets/dishes/miso-ramen.jpg') center/cover no-repeat; }
 .cal-card h3{ font-size: 1.25rem; margin-bottom: 0.5rem; }
 .cal-card p{ font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0; }
 
