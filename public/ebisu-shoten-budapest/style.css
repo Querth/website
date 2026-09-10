@@ -384,6 +384,11 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
   position: absolute; inset: 0;
   background: radial-gradient(ellipse at 50% 30%, rgba(90,60,40,0.5), transparent 60%), linear-gradient(180deg, #1c1712 0%, #100c09 100%);
 }
+.break-media-counter{
+  background:
+    linear-gradient(180deg, rgba(14,10,7,0.78) 0%, rgba(14,10,7,0.68) 45%, rgba(14,10,7,0.88) 100%),
+    url('assets/decor/counter.jpg') center/cover no-repeat;
+}
 .break-inner{ position: relative; z-index: 1; color: var(--paper); max-width: 40rem; }
 .break .eyebrow{ color: rgba(250,246,238,0.7); }
 .break h2{ font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.06; margin: 0.5rem 0 1.4rem; }
