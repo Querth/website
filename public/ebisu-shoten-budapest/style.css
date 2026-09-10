@@ -283,6 +283,11 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
   position: absolute; inset: 0;
   background: rgba(20,16,12,0.28);
 }
+.hero-media-noren{
+  background:
+    linear-gradient(160deg, rgba(20,16,12,0.72) 0%, rgba(15,12,9,0.5) 45%, rgba(10,8,6,0.78) 100%),
+    url('assets/decor/noren.jpg') center/cover no-repeat;
+}
 .hero-inner{ position: relative; z-index: 2; color: var(--paper); }
 .eyebrow{
   font-size: 0.76rem;
