@@ -92,6 +92,8 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
   flex: none;
 }
 .brand-logo-sm{ width: 1.6rem; height: 1.6rem; }
+.brand-logo-full{ height: 3.4rem; width: auto; object-fit: contain; flex: none; }
+.brand-logo-full-sm{ height: 2.3rem; }
 .footer-brand{ display: flex; align-items: center; gap: 0.55rem; }
 .nav-links{ display: flex; align-items: center; gap: clamp(1.1rem, 2.2vw, 2.2rem); }
 .nav-links a{
