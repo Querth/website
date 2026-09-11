@@ -344,6 +344,8 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .photo-interior{ background: url('assets/interior.jpg') center/cover no-repeat; }
 .photo-2{ background: radial-gradient(circle at 60% 30%, #4a2c22, #1a1310 75%); }
 .photo-counter{ background: url('assets/decor/counter.jpg') center/cover no-repeat; }
+.duo-hamachi{ background: url('assets/dishes/hamachi-sashimi.jpg') center/cover no-repeat; }
+.duo-tonpeiyaki{ background: url('assets/dishes/tonpeiyaki.jpg') center/cover no-repeat; }
 .photo-3{ background: radial-gradient(circle at 40% 60%, #5c4326, #201810 75%); }
 .photo-4{ background: radial-gradient(circle at 50% 40%, #7a3524, #1c130e 75%); }
 .photo-5{ background: radial-gradient(circle at 55% 35%, #3c342a, #16120e 75%); }
