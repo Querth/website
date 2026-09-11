@@ -238,6 +238,13 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
 }
 .reveal.is-visible{ opacity: 1; transform: translateY(0); }
 
+/* Touch devices can fling-scroll faster than the reveal animation can
+   keep up with, which shows content mid-fade/offset. Skip the
+   animation there and just show content in place. */
+@media (hover: none) and (pointer: coarse){
+  .reveal{ opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
 /* ---------------- Buttons ---------------- */
 .btn{
   display: inline-flex;

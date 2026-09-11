@@ -3,8 +3,9 @@
 
   /* Parallax backgrounds */
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const isTouchDevice = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
   const parallaxEls = Array.from(document.querySelectorAll("[data-parallax]"));
-  if (parallaxEls.length && !prefersReducedMotion) {
+  if (parallaxEls.length && !prefersReducedMotion && !isTouchDevice) {
     let ticking = false;
     const updateParallax = () => {
       const vh = window.innerHeight;
