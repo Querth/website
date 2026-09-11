@@ -1,0 +1,26 @@
+<svg width="340" height="240" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bottle -->
+  <g stroke="#1a1512" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="52" y="10" width="26" height="12" rx="2"/>
+    <line x1="52" y1="14" x2="78" y2="14" stroke-width="1.4" opacity="0.6"/>
+    <line x1="52" y1="18" x2="78" y2="18" stroke-width="1.4" opacity="0.6"/>
+    <path d="M58 22 V54"/>
+    <path d="M72 22 V54"/>
+    <path d="M58 54 C58 66 40 70 40 92 V204 C40 214 48 222 60 222 H88 C100 222 108 214 108 204 V92 C108 70 90 66 90 54"/>
+    <rect x="46" y="126" width="56" height="66" rx="2" stroke-width="1.8"/>
+    <line x1="54" y1="142" x2="94" y2="142" stroke-width="1.4" opacity="0.55"/>
+    <line x1="54" y1="152" x2="94" y2="152" stroke-width="1.4" opacity="0.55"/>
+    <line x1="54" y1="162" x2="86" y2="162" stroke-width="1.4" opacity="0.55"/>
+  </g>
+
+  <!-- Glass -->
+  <g stroke="#1a1512" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M184 46 L192 218 C192.6 224 197 228 203 228 H247 C253 228 257.4 224 258 218 L266 46"/>
+    <path d="M180 46 C180 38 188 34 196 38 C202 30 214 30 220 38 C226 30 238 30 244 38 C252 34 260 38 260 46 C260 52 254 56 248 54 C244 58 236 58 232 54 C226 60 214 60 208 54 C204 58 196 58 192 54 C186 56 180 52 180 46 Z" stroke-width="2" opacity="0.9"/>
+    <path d="M195 78 L204 208 C204.3 211 206.5 213 209 213 H241 C243.5 213 245.7 211 246 208 L255 78" stroke-width="1.6" opacity="0.55"/>
+    <circle cx="215" cy="150" r="2" stroke-width="1.3" opacity="0.5"/>
+    <circle cx="230" cy="130" r="1.6" stroke-width="1.3" opacity="0.5"/>
+    <circle cx="222" cy="110" r="2.2" stroke-width="1.3" opacity="0.5"/>
+    <circle cx="236" cy="170" r="1.6" stroke-width="1.3" opacity="0.5"/>
+  </g>
+</svg>

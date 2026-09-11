@@ -556,6 +556,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
   text-transform: uppercase;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(26,21,18,0.16);
 }
 .cal-media-1{ background: radial-gradient(circle at 40% 30%, #5c4326, #1a140e 75%); }
 .cal-media-2{ background: radial-gradient(circle at 60% 40%, #7a3524, #1c130e 75%); }
@@ -564,7 +565,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .cal-media-ramen{ background: url('assets/dishes/miso-ramen.jpg') center/cover no-repeat; }
 .cal-media-kushikatsu{ background: url('assets/dishes/kushikatsu-skewers.jpg') center/cover no-repeat; }
 .cal-media-platter{ background: url('assets/dishes/sashimi-platter.jpg') center/cover no-repeat; }
-.cal-media-asahi{ background: url('assets/dishes/asahi-draft.jpg') center/cover no-repeat; }
+.cal-media-asahi{ background: var(--paper) url('assets/icons/beer-illustration.svg') center/62% no-repeat; }
 .cal-card h3{ font-size: 1.25rem; margin-bottom: 0.5rem; }
 .cal-card p{ font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0; }
 
