@@ -166,11 +166,9 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-52%);
-  font-family: var(--serif);
-  font-size: min(50vw, 32rem);
-  line-height: 1;
-  color: rgba(26,21,18,0.06);
-  white-space: nowrap;
+  width: min(60vw, 38rem);
+  height: auto;
+  opacity: 0.06;
   pointer-events: none;
   user-select: none;
 }
