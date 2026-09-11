@@ -348,6 +348,15 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .duo-tonpeiyaki{ background: url('assets/dishes/tonpeiyaki.jpg') center/cover no-repeat; }
 .photo-3{ background: radial-gradient(circle at 40% 60%, #5c4326, #201810 75%); }
 .photo-4{ background: #1c130e url('assets/dishes/kushikatsu-order-card.jpg') center/contain no-repeat; }
+.photo-4::before{
+  content:"";
+  position: absolute;
+  inset: 0;
+  background: url('assets/dishes/kushikatsu-order-card.jpg') center/cover no-repeat;
+  filter: blur(24px) brightness(0.55) saturate(1.1);
+  transform: scale(1.15);
+  z-index: -1;
+}
 .photo-5{ background: radial-gradient(circle at 55% 35%, #3c342a, #16120e 75%); }
 
 /* ---------------- Split duo ---------------- */
