@@ -233,10 +233,10 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
 /* ---------------- Reveal ---------------- */
 .reveal{
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 0.9s cubic-bezier(.2,.7,.2,1), transform 0.9s cubic-bezier(.2,.7,.2,1);
+  transform: translateY(38px) scale(0.98);
+  transition: opacity 1.15s cubic-bezier(.16,.8,.24,1), transform 1.15s cubic-bezier(.16,.8,.24,1);
 }
-.reveal.is-visible{ opacity: 1; transform: translateY(0); }
+.reveal.is-visible{ opacity: 1; transform: translateY(0) scale(1); }
 
 /* ---------------- Buttons ---------------- */
 .btn{
@@ -252,9 +252,10 @@ h1, h2, h3{ font-family: var(--serif); font-weight: 500; margin: 0; }
   border: 1px solid var(--ink);
   background: transparent;
   color: var(--ink);
-  transition: transform 0.3s cubic-bezier(.2,.8,.2,1), background 0.3s ease, color 0.3s ease;
+  transition: transform 0.35s cubic-bezier(.2,.8,.2,1), background 0.3s ease, color 0.3s ease, box-shadow 0.35s ease;
 }
-.btn:hover{ transform: translateY(-2px); }
+.btn:hover{ transform: translateY(-3px); box-shadow: 0 10px 22px rgba(20,16,12,0.14); }
+.btn:active{ transform: translateY(-1px); transition-duration: 0.12s; }
 .btn-dark{ background: var(--ink); color: var(--cream); }
 .btn-dark:hover{ background: #000; }
 .btn-light{ background: var(--cream); color: var(--ink); border-color: var(--cream); }
@@ -512,6 +513,14 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
   margin-bottom: 1.1rem;
   overflow: hidden;
 }
+.cal-media::before{
+  content: "";
+  position: absolute;
+  inset: -6%;
+  background: inherit;
+  transition: transform 0.7s cubic-bezier(.2,.8,.2,1);
+}
+.cal-card:hover .cal-media::before{ transform: scale(1.07); }
 .cal-badge{
   position: absolute;
   top: 0.8rem; left: 0.8rem;
@@ -704,6 +713,9 @@ dl{ margin: 0; }
   .footer-top{ grid-template-columns: 1fr; }
   .overlay-lang{ left: clamp(1.25rem, 6vw, 2rem); right: auto; }
 }
+
+/* ---------------- Parallax ---------------- */
+[data-parallax]{ inset: -14% 0; will-change: transform; }
 
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }

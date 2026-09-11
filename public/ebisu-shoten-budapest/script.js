@@ -1,6 +1,37 @@
 (() => {
   "use strict";
 
+  /* Parallax backgrounds */
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const parallaxEls = Array.from(document.querySelectorAll("[data-parallax]"));
+  if (parallaxEls.length && !prefersReducedMotion) {
+    let ticking = false;
+    const updateParallax = () => {
+      const vh = window.innerHeight;
+      parallaxEls.forEach((el) => {
+        const parent = el.parentElement;
+        const rect = parent.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > vh) return;
+        const speed = parseFloat(el.dataset.parallaxSpeed) || 0.15;
+        const progress = (rect.top + rect.height / 2 - vh / 2) / vh;
+        el.style.transform = `translateY(${progress * speed * 100}px)`;
+      });
+      ticking = false;
+    };
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+    window.addEventListener("resize", updateParallax);
+    updateParallax();
+  }
+
   /* Full-screen nav overlay */
   const overlay = document.getElementById("overlay");
   const navToggle = document.getElementById("navToggle");
