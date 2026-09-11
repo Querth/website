@@ -541,6 +541,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .cal-media-ramen{ background: url('assets/dishes/miso-ramen.jpg') center/cover no-repeat; }
 .cal-media-kushikatsu{ background: url('assets/dishes/kushikatsu-skewers.jpg') center/cover no-repeat; }
 .cal-media-platter{ background: url('assets/dishes/sashimi-platter.jpg') center/cover no-repeat; }
+.cal-media-asahi{ background: url('assets/dishes/asahi-draft.jpg') center/cover no-repeat; }
 .cal-card h3{ font-size: 1.25rem; margin-bottom: 0.5rem; }
 .cal-card p{ font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0; }
 
