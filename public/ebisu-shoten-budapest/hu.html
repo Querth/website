@@ -313,6 +313,7 @@
     <div class="section-head">
       <p class="eyebrow reveal">Minden Oldal</p>
       <h2 class="reveal">A teljes nyomtatott étlap.</h2>
+      <a class="btn reveal" href="https://www.google.com/maps/place/EBISU+SHOTEN+Gozsdu/@47.4983406,19.0594341,17z/data=!4m7!3m6!1s0x4741dd00347ae0fd:0x65b37ebdccaa8c07!8m2!3d47.4983406!4d19.0594341!10e9!16s%2Fg%2F11nvfpx_11">Teljes étlap és árak a Google Maps-en</a>
     </div>
     <div class="menu-photos-track reveal" id="menuPhotosTrack">
       <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="Japán Tapas Tekercsek" loading="lazy" /><span>Japán Tapas Tekercsek</span></button>
@@ -383,7 +384,10 @@
         <dl>
           <div class="visit-row">
             <dt>Cím</dt>
-            <dd>Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Magyarország</dd>
+            <dd>
+              Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Magyarország<br />
+              <a href="https://www.google.com/maps/place/EBISU+SHOTEN+Gozsdu/@47.4983406,19.0594341,17z/data=!4m7!3m6!1s0x4741dd00347ae0fd:0x65b37ebdccaa8c07!8m2!3d47.4983406!4d19.0594341!10e9!16s%2Fg%2F11nvfpx_11">Útvonaltervezés (Google Maps)</a>
+            </dd>
           </div>
           <div class="visit-row">
             <dt>Nyitvatartás</dt>
@@ -408,45 +412,14 @@
         </dl>
       </div>
 
-      <form class="reserve-form reveal" id="reserveForm" novalidate>
-        <p class="reserve-title">Asztalfoglalás</p>
-        <div class="form-row">
-          <label>
-            <span>Név</span>
-            <input type="text" name="name" required autocomplete="name" />
-          </label>
-          <label>
-            <span>Létszám</span>
-            <select name="guests" required>
-              <option value="">—</option>
-              <option>1</option><option>2</option><option>3</option>
-              <option>4</option><option>5</option><option>6+</option>
-            </select>
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            <span>Dátum</span>
-            <input type="date" name="date" required />
-          </label>
-          <label>
-            <span>Időpont</span>
-            <input type="time" name="time" required />
-          </label>
-        </div>
-        <label class="full">
-          <span>E-mail</span>
-          <input type="email" name="email" required autocomplete="email" />
-        </label>
-        <label class="full">
-          <span>Megjegyzés <em>(opcionális)</em></span>
-          <textarea name="notes" rows="2" placeholder="Allergia, alkalom, ülésrend preferencia…"></textarea>
-        </label>
-        <button type="submit" class="btn btn-dark btn-block">
-          <span class="btn-label">Asztal kérése</span>
-        </button>
-        <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
-      </form>
+      <div class="visit-map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=EBISU+SHOTEN+Gozsdu,+Dob+utca+16,+1072+Budapest&output=embed"
+          title="Térkép az Ebisu Shotenhez a Gozsdu Udvarban, Budapesten"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </section>
 

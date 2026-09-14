@@ -189,22 +189,7 @@
     if (e.key === "ArrowRight") showMenuPhoto(menuPhotoIndex + 1);
   });
 
-  /* Reservation form (front-end only demo) */
   const isHu = document.documentElement.lang === "hu";
-  const form = document.getElementById("reserveForm");
-  const status = document.getElementById("reserveStatus");
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-    const data = new FormData(form);
-    status.textContent = isHu
-      ? `Köszönjük, ${data.get("name")} — hamarosan e-mailben visszaigazoljuk a(z) ${data.get("guests")} fős asztalt.`
-      : `Thanks, ${data.get("name")} — we'll confirm your table for ${data.get("guests")} by email shortly.`;
-    form.reset();
-  });
 
   /* Join list form (front-end only demo) */
   const joinForm = document.getElementById("joinForm");

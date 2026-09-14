@@ -312,6 +312,7 @@
     <div class="section-head">
       <p class="eyebrow reveal">Every Page</p>
       <h2 class="reveal">The full printed menu.</h2>
+      <a class="btn reveal" href="https://www.google.com/maps/place/EBISU+SHOTEN+Gozsdu/@47.4983406,19.0594341,17z/data=!4m7!3m6!1s0x4741dd00347ae0fd:0x65b37ebdccaa8c07!8m2!3d47.4983406!4d19.0594341!10e9!16s%2Fg%2F11nvfpx_11">View full menu &amp; prices on Google Maps</a>
     </div>
     <div class="menu-photos-track reveal" id="menuPhotosTrack">
       <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="Tapas Rolls" loading="lazy" /><span>Tapas Rolls</span></button>
@@ -382,7 +383,10 @@
         <dl>
           <div class="visit-row">
             <dt>Address</dt>
-            <dd>Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Hungary</dd>
+            <dd>
+              Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Hungary<br />
+              <a href="https://www.google.com/maps/place/EBISU+SHOTEN+Gozsdu/@47.4983406,19.0594341,17z/data=!4m7!3m6!1s0x4741dd00347ae0fd:0x65b37ebdccaa8c07!8m2!3d47.4983406!4d19.0594341!10e9!16s%2Fg%2F11nvfpx_11">Get directions on Google Maps</a>
+            </dd>
           </div>
           <div class="visit-row">
             <dt>Opening Hours</dt>
@@ -407,45 +411,14 @@
         </dl>
       </div>
 
-      <form class="reserve-form reveal" id="reserveForm" novalidate>
-        <p class="reserve-title">Reserve a table</p>
-        <div class="form-row">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required autocomplete="name" />
-          </label>
-          <label>
-            <span>Guests</span>
-            <select name="guests" required>
-              <option value="">—</option>
-              <option>1</option><option>2</option><option>3</option>
-              <option>4</option><option>5</option><option>6+</option>
-            </select>
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            <span>Date</span>
-            <input type="date" name="date" required />
-          </label>
-          <label>
-            <span>Time</span>
-            <input type="time" name="time" required />
-          </label>
-        </div>
-        <label class="full">
-          <span>Email</span>
-          <input type="email" name="email" required autocomplete="email" />
-        </label>
-        <label class="full">
-          <span>Notes <em>(optional)</em></span>
-          <textarea name="notes" rows="2" placeholder="Allergies, occasion, seating preference…"></textarea>
-        </label>
-        <button type="submit" class="btn btn-dark btn-block">
-          <span class="btn-label">Request table</span>
-        </button>
-        <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
-      </form>
+      <div class="visit-map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=EBISU+SHOTEN+Gozsdu,+Dob+utca+16,+1072+Budapest&output=embed"
+          title="Map to Ebisu Shoten in Gozsdu Udvar, Budapest"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </section>
 
