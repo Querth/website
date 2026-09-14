@@ -254,6 +254,7 @@
       <button class="menu-tab" data-tab="katsu" role="tab" aria-selected="false">Kushikatsu</button>
       <button class="menu-tab" data-tab="yakimono" role="tab" aria-selected="false">Yakimono</button>
       <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Rizs, Tészta és Curry</button>
+      <button class="menu-tab" data-tab="lunch" role="tab" aria-selected="false">Ebéd Menük</button>
     </div>
 
     <div class="menu-body">
@@ -293,15 +294,49 @@
         <li class="menu-item"><div><span class="mi-name">Gazdag Miso Ramen</span><span class="mi-note">特製 味噌ラーメン</span></div><span class="mi-price">4 180 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Prémium Grillezett Angolna Tál (Unadon)</span><span class="mi-note">特上 うな重</span></div><span class="mi-price">5 980 Ft</span></li>
       </ul>
+      <ul class="menu-panel" id="panel-lunch" role="tabpanel">
+        <li class="menu-item"><div><span class="mi-name">001 Hamachi Menü</span><span class="mi-note">Sárga farkú sashimi szezámos szósszal, rizs, miso leves, saláta és a mai köret.</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">002 Gyutan Menü</span><span class="mi-note">Sósra grillezett vékonyra szeletelt marhahús, rizs, miso leves, saláta és a mai köret.</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">003A Toji Menü – Tonkatsu</span><span class="mi-note">Rántott sertéshús tojással, rizs, miso leves, saláta és a mai köret.</span></div><span class="mi-price">5 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">003B Toji Menü – Chickenkatsu</span><span class="mi-note">Rántott csirkehús tojással, rizs, miso leves, saláta és a mai köret.</span></div><span class="mi-price">5 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">004A Tonkatsu Menü</span><span class="mi-note">Japán stílusú sertésszelet, káposzta és kis paradicsom, rizs, miso leves, saláta és a mai köret.</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">004B Chickenkatsu Menü</span><span class="mi-note">Japán stílusú csirkefasírt, káposzta és kis paradicsom, rizs, miso leves, saláta és a mai köret.</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">005A Miso Ramen Menü</span><span class="mi-note">Miso ramen leves, ecetes uborka és csasú sertéshúsos onigiri.</span></div><span class="mi-price">4 980 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">005B Fűszeres Miso Ramen Menü</span><span class="mi-note">Fűszeres miso ramen leves, ecetes uborka és csasú sertéshúsos onigiri.</span></div><span class="mi-price">5 180 Ft</span></li>
+      </ul>
     </div>
 
     <aside class="menu-bar reveal">
       <p class="menu-bar-title">A Bárpultról</p>
+
+      <p class="menu-bar-cat">Sör &amp; Highball</p>
       <ul>
         <li class="menu-item"><div><span class="mi-name">Asahi Super Dry Csapolt (0,5L)</span><span class="mi-note">生ビール</span></div><span class="mi-price">1 480 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Friss Citromos Shochu Sour</span><span class="mi-note">生搾りレモンサワー</span></div><span class="mi-price">2 380 Ft</span></li>
         <li class="menu-item"><div><span class="mi-name">Suntory Kaku Highball</span><span class="mi-note">角ハイボール</span></div><span class="mi-price">2 980 Ft</span></li>
+      </ul>
+
+      <p class="menu-bar-cat">Szaké &amp; Shochu</p>
+      <ul>
         <li class="menu-item"><div><span class="mi-name">Dassai 45 Junmai Daiginjo Szaké</span><span class="mi-note">獺祭 45 純米大吟醸</span></div><span class="mi-price">4 280 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Iichiko Shochu</span><span class="mi-note">いいちこ</span></div><span class="mi-price">2 280 Ft</span></li>
+      </ul>
+
+      <p class="menu-bar-cat">Whisky &amp; Égetett Szeszek</p>
+      <ul>
+        <li class="menu-item"><div><span class="mi-name">Nikka Whisky</span><span class="mi-note">ニッカ</span></div><span class="mi-price">2 580 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Roku Gin</span><span class="mi-note">ロク</span></div><span class="mi-price">2 380 Ft</span></li>
+      </ul>
+
+      <p class="menu-bar-cat">Bor</p>
+      <ul>
+        <li class="menu-item"><div><span class="mi-name">Fehér / Vörös / Rozé (pohár)</span><span class="mi-note">Teljes palackos borlistánk kérésre elérhető</span></div><span class="mi-price">980 Ft</span></li>
+      </ul>
+
+      <p class="menu-bar-cat">Koktélok &amp; Alkoholmentes</p>
+      <ul>
+        <li class="menu-item"><div><span class="mi-name">Mojito</span><span class="mi-note">モヒート</span></div><span class="mi-price">2 780 Ft</span></li>
+        <li class="menu-item"><div><span class="mi-name">Matcha Latte</span><span class="mi-note">抹茶ラテ</span></div><span class="mi-price">1 780 Ft</span></li>
       </ul>
     </aside>
     </div>
@@ -313,6 +348,7 @@
     <div class="section-head">
       <p class="eyebrow reveal">Minden Oldal</p>
       <h2 class="reveal">A teljes nyomtatott étlap.</h2>
+      <a class="btn reveal" href="https://www.google.com/maps/place/EBISU+SHOTEN+Gozsdu/@47.4983406,19.0594341,17z/data=!4m7!3m6!1s0x4741dd00347ae0fd:0x65b37ebdccaa8c07!8m2!3d47.4983406!4d19.0594341!10e9!16s%2Fg%2F11nvfpx_11">Teljes étlap és árak a Google Maps-en</a>
     </div>
     <div class="menu-photos-track reveal" id="menuPhotosTrack">
       <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="Japán Tapas Tekercsek" loading="lazy" /><span>Japán Tapas Tekercsek</span></button>
@@ -383,7 +419,10 @@
         <dl>
           <div class="visit-row">
             <dt>Cím</dt>
-            <dd>Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Magyarország</dd>
+            <dd>
+              Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Magyarország<br />
+              <a href="https://www.google.com/maps/place/EBISU+SHOTEN+Gozsdu/@47.4983406,19.0594341,17z/data=!4m7!3m6!1s0x4741dd00347ae0fd:0x65b37ebdccaa8c07!8m2!3d47.4983406!4d19.0594341!10e9!16s%2Fg%2F11nvfpx_11">Útvonaltervezés (Google Maps)</a>
+            </dd>
           </div>
           <div class="visit-row">
             <dt>Nyitvatartás</dt>
@@ -408,45 +447,14 @@
         </dl>
       </div>
 
-      <form class="reserve-form reveal" id="reserveForm" novalidate>
-        <p class="reserve-title">Asztalfoglalás</p>
-        <div class="form-row">
-          <label>
-            <span>Név</span>
-            <input type="text" name="name" required autocomplete="name" />
-          </label>
-          <label>
-            <span>Létszám</span>
-            <select name="guests" required>
-              <option value="">—</option>
-              <option>1</option><option>2</option><option>3</option>
-              <option>4</option><option>5</option><option>6+</option>
-            </select>
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            <span>Dátum</span>
-            <input type="date" name="date" required />
-          </label>
-          <label>
-            <span>Időpont</span>
-            <input type="time" name="time" required />
-          </label>
-        </div>
-        <label class="full">
-          <span>E-mail</span>
-          <input type="email" name="email" required autocomplete="email" />
-        </label>
-        <label class="full">
-          <span>Megjegyzés <em>(opcionális)</em></span>
-          <textarea name="notes" rows="2" placeholder="Allergia, alkalom, ülésrend preferencia…"></textarea>
-        </label>
-        <button type="submit" class="btn btn-dark btn-block">
-          <span class="btn-label">Asztal kérése</span>
-        </button>
-        <p class="reserve-status" id="reserveStatus" role="status" aria-live="polite"></p>
-      </form>
+      <div class="visit-map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=EBISU+SHOTEN+Gozsdu,+Dob+utca+16,+1072+Budapest&output=embed"
+          title="Térkép az Ebisu Shotenhez a Gozsdu Udvarban, Budapesten"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </section>
 
