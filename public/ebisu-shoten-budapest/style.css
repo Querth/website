@@ -443,6 +443,14 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
   color: var(--ink);
 }
 .menu-bar ul{ list-style: none; margin: 0; padding: 0; }
+.menu-bar-cat{
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 1.4rem 0 0.4rem;
+}
+.menu-bar-cat:first-child{ margin-top: 0; }
 .menu-tabs{
   display: flex;
   flex-wrap: wrap;
