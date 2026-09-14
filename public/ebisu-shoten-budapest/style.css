@@ -566,13 +566,13 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
   box-shadow: 0 1px 4px rgba(26,21,18,0.16);
 }
 .cal-media-1{ background: radial-gradient(circle at 40% 30%, #5c4326, #1a140e 75%); }
-.cal-media-2{ background: radial-gradient(circle at 60% 40%, #7a3524, #1c130e 75%); }
+.cal-media-2{ background: url('assets/interior.jpg') center/cover no-repeat; }
 .cal-media-3{ background: radial-gradient(circle at 30% 60%, #4a2c22, #1a1310 75%); }
 .cal-media-4{ background: radial-gradient(circle at 50% 50%, #6b5138, #241c14 75%); }
 .cal-media-ramen{ background: url('assets/dishes/miso-ramen.jpg') center/cover no-repeat; }
 .cal-media-kushikatsu{ background: url('assets/dishes/kushikatsu-skewers.jpg') center/cover no-repeat; }
 .cal-media-platter{ background: url('assets/dishes/sashimi-platter.jpg') center/cover no-repeat; }
-.cal-media-asahi{ background: var(--paper) url('assets/icons/beer-illustration.svg') center/62% no-repeat; }
+.cal-media-asahi{ background: url('assets/dishes/asahi-draft.jpg') center/cover no-repeat; }
 .cal-card h3{ font-size: 1.25rem; margin-bottom: 0.5rem; }
 .cal-card p{ font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); margin: 0; }
 
@@ -623,12 +623,15 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem;
   padding: clamp(1.5rem, 4vw, 3rem);
   opacity: 0; visibility: hidden;
+  overflow-y: auto;
   transition: opacity 0.35s ease, visibility 0.35s ease;
 }
 .photo-viewer.is-open{ opacity: 1; visibility: visible; }
 .photo-viewer-img{
-  max-width: min(90vw, 640px);
-  max-height: 72vh;
+  max-width: min(96vw, 1100px);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
   object-fit: contain;
   border-radius: 4px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
@@ -657,6 +660,7 @@ section{ position: relative; padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 6vw,
 .visit-row{ padding: 1.2rem 0; border-bottom: 1px dotted var(--line); }
 .visit-row dt{ font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.5rem; }
 .visit-row dd{ margin: 0; line-height: 1.7; color: var(--ink); }
+.visit-row a{ color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 0.2em; }
 .visit-row a:hover{ opacity: 0.6; }
 .visit-social{ display: flex; gap: 1.2rem; }
 dl{ margin: 0; }
