@@ -42,7 +42,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/decor/noren.jpg" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ebisu Shoten",
+    "description": "Az Ebisu Shoten egy japán tapas bár és izakaya a Gozsdu Udvarban, Budapesten — kushikatsu, sashimi, robata yakimono és mély szaké- és highball-választék.",
+    "url": "https://patiphanh.vercel.app/ebisu-shoten-budapest/hu.html",
+    "image": "https://patiphanh.vercel.app/ebisu-shoten-budapest/assets/og-image.jpg",
+    "servesCuisine": "Japanese",
+    "priceRange": "$$",
+    "telephone": "+36302331214",
+    "email": "hello@ebisushoten.hu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dob utca 16 (Gozsdu Udvar 16)",
+      "addressLocality": "Budapest",
+      "postalCode": "1072",
+      "addressCountry": "HU"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "17:00",
+        "closes": "24:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "24:00"
+      }
+    ],
+    "sameAs": ["https://instagram.com/ebisushotenbud"]
+  }
+  </script>
 </head>
 <body>
 
@@ -97,7 +135,8 @@
         <p class="overlay-join-title">Az első asztal, az első pohár.</p>
         <p class="overlay-join-copy">Iratkozzon fel, hogy elsőként értesüljön szezonális ételeinkről és pultnyitásainkról.</p>
         <form class="overlay-join-form" id="joinForm">
-          <input type="email" placeholder="E-mail cím" required aria-label="E-mail cím" />
+          <label class="sr-only" for="joinEmail">E-mail cím</label>
+          <input type="email" id="joinEmail" placeholder="E-mail cím" required />
           <button type="submit">Feliratkozás</button>
         </form>
       </div>
@@ -276,19 +315,19 @@
       <h2 class="reveal">A teljes nyomtatott étlap.</h2>
     </div>
     <div class="menu-photos-track reveal" id="menuPhotosTrack">
-      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="" loading="lazy" /><span>Japán Tapas Tekercsek</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="" loading="lazy" /><span>Kistányérok</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="" loading="lazy" /><span>Különleges Fogások</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="" loading="lazy" /><span>Sashimi</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="" loading="lazy" /><span>Nigiri és Sashimi Dobozok</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="" loading="lazy" /><span>Katsu és Rántott Ételek</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="" loading="lazy" /><span>Karaage és Tempura</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="" loading="lazy" /><span>Yakimono és Grill</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="" loading="lazy" /><span>Grillezett Főételek</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="" loading="lazy" /><span>Rizstálak és Saláták</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="" loading="lazy" /><span>Ramen, Curry és Desszert</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="" loading="lazy" /><span>Italok (1/2)</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="" loading="lazy" /><span>Italok (2/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="Japán Tapas Tekercsek" loading="lazy" /><span>Japán Tapas Tekercsek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="Kistányérok" loading="lazy" /><span>Kistányérok</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="Különleges Fogások" loading="lazy" /><span>Különleges Fogások</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="Sashimi" loading="lazy" /><span>Sashimi</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="Nigiri és Sashimi Dobozok" loading="lazy" /><span>Nigiri és Sashimi Dobozok</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="Katsu és Rántott Ételek" loading="lazy" /><span>Katsu és Rántott Ételek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="Karaage és Tempura" loading="lazy" /><span>Karaage és Tempura</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="Yakimono és Grill" loading="lazy" /><span>Yakimono és Grill</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="Grillezett Főételek" loading="lazy" /><span>Grillezett Főételek</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="Rizstálak és Saláták" loading="lazy" /><span>Rizstálak és Saláták</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="Ramen, Curry és Desszert" loading="lazy" /><span>Ramen, Curry és Desszert</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="Italok (1/2)" loading="lazy" /><span>Italok (1/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="Italok (2/2)" loading="lazy" /><span>Italok (2/2)</span></button>
     </div>
   </section>
 
