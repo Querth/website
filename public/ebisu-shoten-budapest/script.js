@@ -37,16 +37,20 @@
   const overlay = document.getElementById("overlay");
   const navToggle = document.getElementById("navToggle");
   const overlayClose = document.getElementById("overlayClose");
+  let overlayTrigger = null;
 
   const openOverlay = () => {
+    overlayTrigger = document.activeElement;
     overlay.classList.add("is-open");
     overlay.setAttribute("aria-hidden", "false");
     navToggle.setAttribute("aria-expanded", "true");
+    overlayClose.focus();
   };
   const closeOverlay = () => {
     overlay.classList.remove("is-open");
     overlay.setAttribute("aria-hidden", "true");
     navToggle.setAttribute("aria-expanded", "false");
+    if (overlayTrigger) overlayTrigger.focus();
   };
   navToggle.addEventListener("click", openOverlay);
   overlayClose.addEventListener("click", closeOverlay);
@@ -98,27 +102,37 @@
     const amount = card ? card.getBoundingClientRect().width + 26 : 300;
     track.scrollBy({ left: dir * amount, behavior: "smooth" });
   };
+  const updateCarouselButtons = () => {
+    prevBtn.disabled = track.scrollLeft <= 0;
+    nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 1;
+  };
   prevBtn.addEventListener("click", () => scrollByCard(-1));
   nextBtn.addEventListener("click", () => scrollByCard(1));
+  track.addEventListener("scroll", updateCarouselButtons);
+  updateCarouselButtons();
 
   /* Gallery lightbox */
   const lightbox = document.getElementById("lightbox");
   const lightboxFrame = document.getElementById("lightboxFrame");
   const lightboxCaption = document.getElementById("lightboxCaption");
   const lightboxClose = document.getElementById("lightboxClose");
+  let lightboxTrigger = null;
 
-  document.querySelectorAll(".gallery-tile, .duo-half").forEach((tile) => {
+  document.querySelectorAll(".duo-half").forEach((tile) => {
     tile.addEventListener("click", () => {
+      lightboxTrigger = document.activeElement;
       const bg = getComputedStyle(tile).backgroundImage;
       lightboxFrame.style.backgroundImage = bg;
       lightboxCaption.textContent = tile.dataset.caption || "";
       lightbox.classList.add("is-open");
       lightbox.setAttribute("aria-hidden", "false");
+      lightboxClose.focus();
     });
   });
   const closeLightbox = () => {
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
+    if (lightboxTrigger) lightboxTrigger.focus();
   };
   lightboxClose.addEventListener("click", closeLightbox);
   lightbox.addEventListener("click", (e) => {
@@ -137,6 +151,7 @@
   const menuPhotoPrev = document.getElementById("menuPhotoPrev");
   const menuPhotoNext = document.getElementById("menuPhotoNext");
   let menuPhotoIndex = 0;
+  let menuPhotoTrigger = null;
 
   const showMenuPhoto = (index) => {
     menuPhotoIndex = (index + menuThumbs.length) % menuThumbs.length;
@@ -147,13 +162,16 @@
     menuPhotoCaption.textContent = `${label} — ${menuPhotoIndex + 1} / ${menuThumbs.length}`;
   };
   const openMenuViewer = (index) => {
+    menuPhotoTrigger = document.activeElement;
     showMenuPhoto(index);
     menuPhotoViewer.classList.add("is-open");
     menuPhotoViewer.setAttribute("aria-hidden", "false");
+    menuPhotoClose.focus();
   };
   const closeMenuViewer = () => {
     menuPhotoViewer.classList.remove("is-open");
     menuPhotoViewer.setAttribute("aria-hidden", "true");
+    if (menuPhotoTrigger) menuPhotoTrigger.focus();
   };
   menuThumbs.forEach((thumb, index) => {
     thumb.addEventListener("click", () => openMenuViewer(index));
@@ -193,7 +211,7 @@
   joinForm.addEventListener("submit", (e) => {
     e.preventDefault();
     joinForm.innerHTML = isHu
-      ? '<p style="font-size:0.85rem;color:var(--ink-soft);margin:0;">Feliratkozott.</p>'
-      : '<p style="font-size:0.85rem;color:var(--ink-soft);margin:0;">You\'re on the list.</p>';
+      ? '<p class="join-success">Feliratkozott.</p>'
+      : '<p class="join-success">You\'re on the list.</p>';
   });
 })();

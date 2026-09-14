@@ -42,7 +42,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/decor/noren.jpg" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ebisu Shoten",
+    "description": "Japanese tapas bar and izakaya in Gozsdu Udvar, Budapest — kushikatsu, sashimi, robata yakimono, and a deep sake and highball list.",
+    "url": "https://patiphanh.vercel.app/ebisu-shoten-budapest/index.html",
+    "image": "https://patiphanh.vercel.app/ebisu-shoten-budapest/assets/og-image.jpg",
+    "servesCuisine": "Japanese",
+    "priceRange": "$$",
+    "telephone": "+36302331214",
+    "email": "info@ebisu.hu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dob utca 16 (Gozsdu Udvar 16)",
+      "addressLocality": "Budapest",
+      "postalCode": "1072",
+      "addressCountry": "HU"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "18:00",
+        "closes": "00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "00:00"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/ebisushotengozsdu"]
+  }
+  </script>
 </head>
 <body>
 
@@ -90,14 +128,15 @@
       </div>
       <div class="overlay-col">
         <a href="tel:+36302331214">+36 30 233 1214</a>
-        <a href="mailto:hello@ebisushoten.hu">hello@ebisushoten.hu</a>
-        <a href="https://instagram.com/ebisushotenbud">Instagram</a>
+        <a href="mailto:info@ebisu.hu">info@ebisu.hu</a>
+        <a href="https://www.instagram.com/ebisushotengozsdu">Instagram</a>
       </div>
       <div class="overlay-col overlay-join">
         <p class="overlay-join-title">First seating, first pour.</p>
         <p class="overlay-join-copy">Join the list for seasonal menus and counter openings before they're announced.</p>
         <form class="overlay-join-form" id="joinForm">
-          <input type="email" placeholder="Email address" required aria-label="Email address" />
+          <label class="sr-only" for="joinEmail">Email address</label>
+          <input type="email" id="joinEmail" placeholder="Email address" required />
           <button type="submit">Join</button>
         </form>
       </div>
@@ -178,7 +217,7 @@
   <section class="intro intro-reverse">
     <div class="intro-grid">
       <div class="intro-media reveal">
-        <div class="photo photo-4"><span class="photo-tag">Kushikatsu order card</span></div>
+        <div class="photo photo-4"></div>
       </div>
       <div class="intro-text reveal">
         <p class="eyebrow">Kitchen &amp; Bar</p>
@@ -275,19 +314,19 @@
       <h2 class="reveal">The full printed menu.</h2>
     </div>
     <div class="menu-photos-track reveal" id="menuPhotosTrack">
-      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="" loading="lazy" /><span>Tapas Rolls</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="" loading="lazy" /><span>Small Plates</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="" loading="lazy" /><span>Specialty Dishes</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="" loading="lazy" /><span>Sashimi</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="" loading="lazy" /><span>Nigiri &amp; Sashimi Boxes</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="" loading="lazy" /><span>Katsu &amp; Fried</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="" loading="lazy" /><span>Karaage &amp; Tempura</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="" loading="lazy" /><span>Yakimono &amp; Grill</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="" loading="lazy" /><span>Grilled Mains</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="" loading="lazy" /><span>Rice Bowls &amp; Salads</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="" loading="lazy" /><span>Ramen, Curry &amp; Dessert</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="" loading="lazy" /><span>Drinks (1/2)</span></button>
-      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="" loading="lazy" /><span>Drinks (2/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/tapas-rolls.jpg" alt="Tapas Rolls" loading="lazy" /><span>Tapas Rolls</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/small-plates.jpg" alt="Small Plates" loading="lazy" /><span>Small Plates</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/specialty-dishes.jpg" alt="Specialty Dishes" loading="lazy" /><span>Specialty Dishes</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/sashimi.jpg" alt="Sashimi" loading="lazy" /><span>Sashimi</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/nigiri-sashimi.jpg" alt="Nigiri &amp; Sashimi Boxes" loading="lazy" /><span>Nigiri &amp; Sashimi Boxes</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/katsu-fried.jpg" alt="Katsu &amp; Fried" loading="lazy" /><span>Katsu &amp; Fried</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/karaage-tempura.jpg" alt="Karaage &amp; Tempura" loading="lazy" /><span>Karaage &amp; Tempura</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/yakimono.jpg" alt="Yakimono &amp; Grill" loading="lazy" /><span>Yakimono &amp; Grill</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/grilled-mains.jpg" alt="Grilled Mains" loading="lazy" /><span>Grilled Mains</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/rice-bowls-salad.jpg" alt="Rice Bowls &amp; Salads" loading="lazy" /><span>Rice Bowls &amp; Salads</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/ramen-curry-dessert.jpg" alt="Ramen, Curry &amp; Dessert" loading="lazy" /><span>Ramen, Curry &amp; Dessert</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-1.jpg" alt="Drinks (1/2)" loading="lazy" /><span>Drinks (1/2)</span></button>
+      <button class="menu-photo-thumb"><img src="assets/menu/drinks-2.jpg" alt="Drinks (2/2)" loading="lazy" /><span>Drinks (2/2)</span></button>
     </div>
   </section>
 
@@ -346,23 +385,23 @@
             <dd>Gozsdu Udvar 16<br />Dob utca 16, 1072 Budapest, Hungary</dd>
           </div>
           <div class="visit-row">
-            <dt>Hours</dt>
+            <dt>Opening Hours</dt>
             <dd>
-              Monday – Friday 17:00–24:00<br />
-              Saturday – Sunday 12:00–24:00
+              Monday – Thursday 18:00–00:00<br />
+              Friday – Sunday 12:00–00:00
             </dd>
           </div>
           <div class="visit-row">
             <dt>Contact</dt>
             <dd>
               <a href="tel:+36302331214">+36 30 233 1214</a><br />
-              <a href="mailto:hello@ebisushoten.hu">hello@ebisushoten.hu</a>
+              <a href="mailto:info@ebisu.hu">info@ebisu.hu</a>
             </dd>
           </div>
           <div class="visit-row">
             <dt>Follow</dt>
             <dd class="visit-social">
-              <a href="https://instagram.com/ebisushotenbud">Instagram @ebisushotenbud</a>
+              <a href="https://www.instagram.com/ebisushotengozsdu">Instagram @ebisushotengozsdu</a>
             </dd>
           </div>
         </dl>
@@ -427,7 +466,7 @@
       </div>
       <div class="footer-col">
         <p class="footer-heading">Follow</p>
-        <a href="https://instagram.com/ebisushotenbud">Instagram</a>
+        <a href="https://www.instagram.com/ebisushotengozsdu">Instagram</a>
       </div>
     </div>
     <div class="footer-bottom">
